@@ -150,6 +150,7 @@
                     activateSqr();
                     if(fishkaPos == 9){
                         endGame = true;
+                        rectEmpty.remove();
                         endGameFunc('Поздравляем, вы выиграли!');
                     }
                     if(!endGame){
@@ -311,6 +312,7 @@ var closeBlock = document.getElementById('close'),
     };
     
 closeBlock.addEventListener('click',closeFunc);
+
 moreBlock.addEventListener('click',function(){
     var evt = document.createEvent("MouseEvents");
     evt.initMouseEvent("click", true, true, window, 1, 0, 0, 0, 0,
