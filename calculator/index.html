@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="main row">
+		<div class="head-title">Калькулятор рассрочки</div>
+		<div class="field-input">
+			<div class="input-box">
+				<label class="control-label" for="building">Корпуса и сроки сдачи</label>
+				<select id="building" name="building" class="form-control roboto-bold">
+				</select>
+			</div>
+			<div class="input-box">
+				<label class="control-label" for="programm_id">Выберите программу рассрочки</label>
+				<select id="programm_id" name="programm_id" class="form-control roboto-bold">
+				</select>
+			</div>
+			<div class="input-box">
+				<label class="control-label" for="pay_type">Ежемесячный или ежеквартальный платеж </label>
+				<select id="pay_type" name="pay_type" class="form-control roboto-bold">
+				</select>
+			</div>
+			<div class="input-box" name="price">
+				<label class="control-label" for="price">Стоимость квартиры, руб. </label>
+			</div>
+			<div class="input-box" name="first_pay">
+				<label class="control-label" for="first_pay">Первый взнос, руб. </label>
+			</div>
+			<div class="input-box" name="calc">
+				<div name="calc" id="calc" class="btn-send">Рассчитать</div>
+			</div>
+		</div>
+		<div class="field-res">
+			<div class="title roboto-bold right-side" name="title"></div>
+			<div class="desc right-side" name="desc"></div>
+			<div class="price-view">
+				<span class="price-num right-side" name="pay_type"></span><span class="price-name"> &#8381;/мес.</span>
+			</div>
+			<!--
+			<div class="desc">Остаточный платёж<br> I кв. 2019 года </div>
+			<div class="price-view">
+				<span class="price-num" name="leftpay">6 787 890</span><span class="price-name"> &#8381;/мес.</span>
+			</div>-->
+		</div>
+	</div>
+	<div class="loader"><img src="img/preloader.gif" /></div>
+</div>
+
+<script>
+</script>
+</body>
+</html>
