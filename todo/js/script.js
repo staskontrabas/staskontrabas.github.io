@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var todoList = {
 		list: $('.tasks'),
 		init: function(tasks){// инициализация списка
+			console.log(tasks);
 				if(!tasks){
 					tasks = db.addCollection('tasks');
 				}
