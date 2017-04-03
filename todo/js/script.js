@@ -5,7 +5,6 @@ $(document).ready(function(){
 	var todoList = {
 		list: $('.tasks'),
 		init: function(tasks){// инициализация списка
-			console.log(tasks);
 				if(!tasks){
 					tasks = db.addCollection('tasks');
 				}
@@ -84,6 +83,7 @@ $(document).ready(function(){
 	db.loadDatabase({}, function(){//подключение базы из локального хранилища
 		tasks = db.getCollection('tasks');
 		todoList.init(tasks);
+			console.log(tasks);
 	});
 	
 });
