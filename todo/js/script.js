@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var db = new loki('Tasks'),
-		tasks;
+		tasks = null;
 	
 	var todoList = {
 		list: $('.tasks'),
