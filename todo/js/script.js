@@ -13,11 +13,11 @@ $(document).ready(function(){
 					this.render();
 				}
 			},
-		hide: function(){//скрыть интерфэйс
+		hide: function(){//скрыть интерфейс
 			$('.tasks').hide();
 			$('.box-btn').hide();
 		},
-		show: function(){//показать интерфэйс
+		show: function(){//показать интерфейс
 			$('.tasks').show();
 			$('.box-btn').show();
 		},
