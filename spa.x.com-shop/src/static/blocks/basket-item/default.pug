@@ -1,0 +1,27 @@
+mixin basket-item(style, args)
+  - block_style = 'basket-item'
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  - args.link = args.link ? args.link : ''
+
+  div.basket-item
+
+    div.basket-item__image(style=args.img)
+
+    div.basket-item__text-wrapper
+      span.basket-item__title
+        =args.title
+      span.basket-item__text
+        =args.text
+      span.basket-item__price
+        =args.price
+
+      .basket-item__control-wrapper
+        button.basket-item__control.basket-item__control_minus
+          span.icon.icon_minus
+        input.basket-item__sum(type="text" value="1")
+        button.basket-item__control.basket-item__control_plus
+          span.icon.icon_plus
+
+    a.basket-item__remove(href="basket-empty.html")
+      span.icon.icon_remove-active

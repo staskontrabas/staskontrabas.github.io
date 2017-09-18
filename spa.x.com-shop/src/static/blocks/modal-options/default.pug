@@ -1,0 +1,104 @@
++modal('modal_hidden modal_align-center modal_top-mobile', {id: 'js-modal-5', title: 'Выбор параметров'})
+  button.modal__reset Сбросить
+  +modal__content('modal__content_scroll modal__content_options')
+
+    +text('modal-options__title text_size_small text_big')
+      ='Интерфейс'
+    +list()
+      +list__item('category-selection__item active')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button modal-options__button_picked')
+          +text('text_size_x-medium')
+            ='Интерфейс'
+          +text('')
+            ='PCI-E x1'
+
+    +text('modal-options__title text_size_small text_big')
+      ='ГРАФИЧЕСКИЙ процессор'
+    +list()
+      +list__item('category-selection__item active')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button modal-options__button_picked')
+          +text('')
+            ='Тип'
+          +text('')
+            ='Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120, Matrox M9120'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button', {disabled: 'disabled'})
+            ='Частота ядра'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button', {disabled: 'disabled'})
+            ='Частота шейдерного домена'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button')
+            ='Техпроцесс'
+
+    +text('modal-options__title text_size_small text_big')
+      ='Характеристики видеопамяти'
+    +list()
+      +list__item('category-selection__item active')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button modal-options__button_picked')
+          +text('')
+            ='Объем'
+          +text('')
+            ='512 МБ'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button', {disabled: 'disabled'})
+            ='Эффективная частота'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button modal-options__button_picked', {disabled: 'disabled'})
+          +text('')
+            ='Тип'
+          +text('')
+            ='Matrox M9120'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button')
+            ='Разрядность шины видеопамяти'
+
+    +text('modal-options__title text_size_small text_big')
+      ='Характеристики видеопамяти'
+    +list()
+      +list__item('category-selection__item active')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button modal-options__button_picked')
+          +text('')
+            ='Объем'
+          +text('')
+            ='512 МБ'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button', {disabled: 'disabled'})
+            ='Эффективная частота'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button modal-options__button_picked', {disabled: 'disabled'})
+          +text('')
+            ='Тип'
+          +text('')
+            ='Matrox M9120'
+      +list__item('category-selection__item')
+        button.category-selection__reset
+          +icon('icon_close-active')
+        +button('modal-options__button')
+            ='Разрядность шины видеопамяти'
+
+  +button('button_size_large button_format_wide button_error button_no-radius button-bottom', {text: 'Нет подходящих товаров'})

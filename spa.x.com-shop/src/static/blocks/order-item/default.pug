@@ -1,0 +1,41 @@
+mixin order-item(style, args)
+  - block_style = "order-item"
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  if args.label == 'label_white'
+    - stateColor = 'text_size_medium text_color_accent'
+  else if args.label
+    - stateColor = 'text_size_medium text_color_contrast'
+  else
+    - stateColor = 'text_size_medium'
+  div(class=style)
+    +link('order-item__link link_block link_black', {href: '/order__otgruzhen_nopaid_courer.html'})
+      span.order-item__left
+        span.order-item__number
+          +text('text_bold text_size_large')
+            =args.number
+        span.order-item__state
+          +label(args.label)
+            +text(stateColor)
+              =args.state
+          if args.paytext
+            +icon('icon_shape-green')
+            +text('text_color_success text_size_x-medium')
+              =args.paytext
+      span.order-item__right
+        if args.price
+          span.order-item__price
+            +text('text_bold text_size_large')
+              =args.price
+              | &nbsp;₽
+        if args.count
+          span.order-item__count
+            +text('text_size_medium')
+              =args.count
+        if args.reserve
+          span.order-item__reserve
+            +text('text_size_medium text_color_accent')
+              | Счет-резерв
+            br
+            +text('text_size_x-medium')
+              =args.reserve

@@ -1,0 +1,59 @@
+.search
+	+form('search__form')
+		.search__input
+			+input('input_format_wide', {placeholder: 'Apple'})
+			a(href="#", data-type="search-clear").search__clear
+				+icon('icon_remove-small')
+		.search__button
+			+button('button_size_small', {text: 'Найти'})
+	+list('search__suggest')
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Адаптер интерфейсов
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Адаптер питания
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Кабель интерфейсный
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Клавиатура Комплект с мышью
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Cтационарный медиаплеер
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Ноутбук
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Маршрутизатор точка доступа
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Привод оптический
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Зарядное устройство
+		+list__item('search__item')
+			+link('link_block link_black text_underline_none')
+				+text('text_size_x-medium')
+					+text('search__coincidence') Apple 
+					| Наушники гарнитура

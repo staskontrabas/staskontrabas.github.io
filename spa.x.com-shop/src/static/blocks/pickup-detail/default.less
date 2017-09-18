@@ -1,0 +1,30 @@
+.pickup-detail {
+	&__map {
+		height: 335px;
+		position: relative;
+	}
+	&__content {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		hr {
+			background: @color_black;
+			border: none;
+			width: 100%;
+			height: 1px;
+			opacity: .2;
+		}
+	}
+	&__text {
+		max-width: 460px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+	.pickup-detail {
+		&__map {
+			height: 227px;
+		}
+	}
+
+}

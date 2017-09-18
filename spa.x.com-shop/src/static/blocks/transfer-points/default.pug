@@ -1,0 +1,13 @@
++modal("modal_hidden modal_size_small modal_ident modal__transfer-points", {id:"js-modal-transfer", type:"simple", title:"Перевод баллов"})
+  +modal__content()
+    +form('transfer-points-form')
+      +form-field('transfer-points-form__field')
+        +input('input_default input_format_wide', {placeholder: 'Кому (Эл. почта)'})
+      +form-field('transfer-points-form__field transfer-points-form__points')
+        +input('input_default', {placeholder: '0'})
+        .transfer-points-form__points-total из 546
+      +form-field('transfer-points-form__field')
+        +input('input_default input_format_wide', {type: 'password', placeholder: 'Текущий пароль'})
+      +form-field('transfer-points-form__button')
+  +modal__footer()
+    +button('button_size_medium', {text: 'Отправить'})

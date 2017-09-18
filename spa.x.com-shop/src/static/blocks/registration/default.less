@@ -1,0 +1,41 @@
+.registration {
+  padding-bottom: 50px;
+  &__radio-group {
+    margin-bottom: 20px;
+  }
+  &__submit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+}
+
+.registration-form {
+  max-width: 768px;
+  margin: 0 auto;
+  &__group {
+    margin-bottom: 3px;
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    .registration-form {
+      &__field {
+        margin-bottom: 27px;
+      }
+    }
+  }
+  &__title {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    margin-bottom: 28px;
+  }
+  &__field {
+    margin-bottom: 38px;
+  }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <linearGradient id="svgActionXpert" x1="102%" x2="0%" y1="101%" y2="0%">
+      <stop offset="0%" stop-color="#4531FF"/>
+      <stop offset="100%" stop-color="#EF89FF"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="70" height="70" fill="url(#svgActionXpert)" opacity=".996" rx="4"/>
+    <text fill="#FFF" font-family="Circe-Bold, Circe" font-size="9" font-weight="bold">
+      <tspan x="24.372" y="56">Xpert</tspan> <tspan x="9" y="65">рекомендует</tspan>
+    </text>
+    <path fill="#FFF" d="M34.5 7C24.3 7 16 15.3 16 25.5S24.3 44 34.5 44 53 35.7 53 25.5 44.7 7 34.5 7zm10.286 22.274c0 1.332-1.554 1.924-1.554 1.924s.444.592.444 1.406c0 .74.074 2.443-6.956 2.443-9.324 0-8.584-1.703-12.58-1.703v-9.102c1.48 0 2.294-1.924 3.7-3.626 1.628-1.924 4.736-2.738 5.18-7.4.222-1.85 2.072-1.036 2.664 0 .963 1.628-.147 3.626-.962 5.328-.666 1.48-.592 3.108 1.332 2.886 2.22-.296 3.553-.666 5.476-.666 1.332 0 2.072.888 2.072 1.628 0 .592-.148 1.554-.148 1.554s1.333.444 1.333 1.776c0 1.258-1.185 1.85-1.185 1.85s1.184.444 1.184 1.702z"/>
+  </g>
+</svg>

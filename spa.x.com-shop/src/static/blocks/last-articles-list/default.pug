@@ -1,0 +1,14 @@
+mixin last-article(style, args)
+  - block_style = 'last-article'
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  - args.link = args.link ? args.link : 'news-detail.html'
+  
+  a(class=style, href=args.link)
+    span.last-article__img
+      img(src=args.img)
+    span.last-article__text
+      span.last-article__title
+        =args.title
+      span.last-article__date
+        =args.date

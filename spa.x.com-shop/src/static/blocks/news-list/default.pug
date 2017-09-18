@@ -1,0 +1,16 @@
+mixin news-item(style, args)
+  - block_style = 'news-item'
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  - args.link = args.link ? args.link : 'news-detail.html'
+
+  a(class=style, href=args.link)
+    span.news-item__img-wrapper
+      img.news-item__img(src=args.img)
+    span.news-item__text
+      span.news-item__date
+        =args.date
+      span.news-item__title
+        =args.title
+      span.news-item__info
+        =args.info

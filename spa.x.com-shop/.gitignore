@@ -1,0 +1,10 @@
+.idea/
+node_modules/
+src_/
+test/
+test src/
+test build/
+App_.js
+build/
+.DS_Store
+*.pug.transpiled.jsx

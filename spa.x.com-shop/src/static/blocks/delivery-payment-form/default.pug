@@ -1,0 +1,19 @@
+// Доставка и оплата
++form('delivery-payment-form')
+	.delivery-payment-form__wrap
+		+form-field('delivery-payment-form__field')
+			+text('delivery-payment-form__label text_size_medium') Регион
+			+select('',{options: ['Москва и Моск. обл. до А107','Москва и Моск. обл. до А107','Москва и Моск. обл. до А107','Москва и Моск. обл. до А107']})
+		+form-field('delivery-payment-form__field')
+			+text('delivery-payment-form__label text_size_medium') Доставка
+			+select('',{options: ['Курьером лично в руки','Курьером лично в руки','Курьером лично в руки','Курьером лично в руки']})
+		+form-field('delivery-payment-form__field')
+			+text('delivery-payment-form__label text_size_medium') Оплата
+			+select('',{options: ['Наличными курьеру','Наличными курьеру','Наличными курьеру']})
+		+form-field('delivery-payment-form__field')
+			+text('delivery-payment-form__label text_size_medium') Станция метро *
+			+select('',{options: ['Октябрьская','Октябрьская','Октябрьская']})
+		+form-field('delivery-payment-form__field')
+			+input('input_format_wide', {placeholder: 'Адрес доставки'})
+	+form-field('delivery-payment-form__button')
+		+button('button_success button_size_xlarge button_format_wide', {text: 'Сохранить изменения'})

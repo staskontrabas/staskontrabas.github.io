@@ -1,0 +1,17 @@
+.pagination
+  .pagination__item
+    +button('paginate_button paginate_number paginate_border')
+      +icon('icon_paginator-left')
+  .pagination__item
+    +button('paginate_button paginate_button_selected paginate_number', {text: '1'})
+  .pagination__item
+    +button('paginate_button paginate_number', {text: '2'})
+  .pagination__item
+    +button('paginate_button paginate_number', {text: '3'})
+  .pagination__item
+    +button('paginate_button paginate_number', {text: '4'})
+  .pagination__item
+    +button('paginate_button paginate_number', {text: '5'})
+  .pagination__item
+    +button('paginate_button paginate_number')
+      +icon('icon_paginator-right')

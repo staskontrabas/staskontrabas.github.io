@@ -1,0 +1,13 @@
+// Авторизация
++form('auth-form')
+  +form-field('auth-form__form-field')
+    +input('input_default input_animate-top input_format_wide', {placeholder: 'Электронная почта'})
+  +form-field('auth-form__form-field')
+    +input('input_default input_animate-top input_format_wide', {type: 'password', placeholder: 'Пароль'})
+  +form-field('auth-form__links')
+    +button('link_default', {type: 'link', link:"js-modal-forget-password"})
+      | Забыли пароль?
+    +link('link_default', {href: 'registration.html'}) 
+      | Регистрация
+  +form-field('auth-form__button')
+    +button('button_size_medium button_disable button_format_wide', {text: 'Войти в личный кабинет'})

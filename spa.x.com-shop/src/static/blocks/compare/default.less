@@ -1,0 +1,145 @@
+.compare {
+	&__header {
+		text-align: center;
+		background: #fff;
+		padding: 25px 15px 20px;
+		position: relative;
+	}
+	&__remove {
+		position: absolute;
+		right: 20px;
+		top: 5px;
+		z-index: 10;
+	}
+	&__group {
+		&-title {
+			font-size: 12px;
+			letter-spacing: 1px;
+			color: #4a4a4a;
+			text-transform: uppercase;
+			padding: 20px 20px 4px;
+		}
+	}
+	&__info {
+		background: @color_white;
+		font-size: 13px;
+		padding-top: 5px;
+		padding-bottom: 8px;
+		p {
+			margin: 5px 0;
+		}
+	}
+	&__artikul {
+		font-size: 11px;
+		font-weight: 300;
+		color: #818181;
+		line-height: 11px;
+		text-align: left;
+		margin-bottom: -1px;
+	}
+	&__title {
+		display: inline-block;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 20px;
+		margin-bottom: 6px;
+	}
+	&__carousel {
+		&.carousel {
+			.carousel__dots {
+				margin-top: 8px;
+			}
+			.carousel__dot {
+				span {
+					background: #9b9b9b;
+					opacity: .5;
+					margin-left: 3px;
+					margin-right: 3px;
+					margin-bottom: 0;
+				}
+				&.active,
+				&:hover {
+					span {
+						opacity: 1;
+						background: #9b9b9b;
+					}
+				}
+			}
+		}
+		.carousel__item {
+			height: 132px;
+			white-space: nowrap;
+			&:after,
+			img {
+				display: inline-block;
+				vertical-align: middle;
+			}
+			&:after {
+				content: '';
+				width: 1px;
+				height: 100%;
+			}
+			img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+	&__radio-group {
+		width: 100%;
+		margin: 0 auto;
+		max-width: 380px;
+		padding-left: 10px;
+		padding-right: 10px;
+		&:after,
+		&:before {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		.radio {
+			span {
+				width: 50%;
+				float: left;
+			}
+			&__text {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+	
+	.compare {
+		.layout__col {
+			width: 50%;
+		}
+		&__carousel {
+			text-align: center;
+		}
+		&__header {
+			text-align: left;
+			padding-top: 15px;
+			padding-bottom: 10px;
+		}
+		&__remove {
+			right: 15px;
+		}
+		&__info {
+			padding: 10px 0;
+			font-size: 11px;
+			.layout__col {
+				padding: 0 15px;
+			}
+		}
+		&__radio-group {
+			max-width: 100%;
+		}
+	}
+
+}

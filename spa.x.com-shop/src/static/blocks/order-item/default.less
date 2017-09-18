@@ -1,0 +1,58 @@
+.order-item {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  &__link {
+    padding: 15px 20px;
+    &:after,
+    &:before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  &:after,
+  &:before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &__left,
+  &__right {
+    width: 50%;
+  }
+  &__left {
+    float: left;
+  }
+  &__right {
+    float: right;
+    text-align: right;
+    padding-top: 4px;
+  }
+  &__price {
+    line-height: 16px;
+  }
+  &__reserve {
+    line-height: 20px;
+  }
+  .label {
+    margin-right: 10px;
+    padding: 2px 7px;
+  }
+  .label_border_none {
+    line-height: 18px;
+  }
+  .icon {
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+  &__number,
+  &__state,
+  &__price,
+  &__count,
+  &__reserve {
+    display: block;
+  }
+  &__count {
+    opacity: 0.54;
+  }
+}

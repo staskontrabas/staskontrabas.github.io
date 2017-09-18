@@ -1,0 +1,30 @@
+.bonus-item {
+  padding: 15px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  &:after,
+  &:before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &__left {
+    float: left;
+    width: 50%;
+  }
+  &__right {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+  &__number {
+    opacity: 0.84;
+    line-height: 20px;
+  }
+  &__date {
+    letter-spacing: -0.1px;
+  }
+  &__balls {
+    padding-top: 9px;
+  }
+}

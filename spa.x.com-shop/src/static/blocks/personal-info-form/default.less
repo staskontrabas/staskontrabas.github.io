@@ -1,0 +1,47 @@
+.personal-info {
+	background: #fff;
+	padding: 90px 15px 190px;
+}
+
+.personal-info-form {
+	font-family: 'Circe';
+	&__wrap {
+		max-width: 343px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__field {
+		margin-bottom: 27px;
+		&-pass {
+			position: relative;
+			padding-right: 170px;
+			.button {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+	&__title {
+		font-size: 12px;
+		letter-spacing: 1px;
+		color: #4a4a4a;
+		text-transform: uppercase;
+		margin-bottom: 17px;
+		margin-top: 47px;
+	}
+	&__button {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+	
+	.personal-info {
+		padding: 15px 15px 90px;
+	}
+
+}

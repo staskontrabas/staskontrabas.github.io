@@ -1,0 +1,10 @@
++modal("modal_hidden modal_size_small modal_ident", {id:"js-modal-1", type:"simple", title:"Обратный звонок"})
+  +modal__content("modal__content_feedback")
+    +input("modal-feedback__input", {placeholder: 'Ваше имя'})
+    +input("modal-feedback__input", {placeholder: 'Номер телефона'})
+    p.modal-feedback__text
+      +text("text_size_medium") Данная услуга доступна только для жителей Москвы и Московской области.
+    p.modal-feedback__text
+      +text("text_size_medium") Мы работаем — по будням с 9:00 до 21:00, в&nbsp;выходные дни с 10:00 до 18:00.
+  +modal__footer()
+    +button("button_size_large modal-feedback__button", {text: 'Отправить'})

@@ -1,0 +1,10 @@
+mixin popular-category(style, args)
+  - block_style = 'popular-category'
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  - args.link = args.link ? args.link : 'category.html'
+  
+  a(class=style, href=args.link)
+    span.popular-category__img(style=args.img)
+    span.popular-category__title
+      !=args.title

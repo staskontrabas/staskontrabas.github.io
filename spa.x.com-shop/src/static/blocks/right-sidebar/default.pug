@@ -1,0 +1,74 @@
+.right-sidebar
+
+  .right-sidebar__user-wrapper
+    .right-sidebar__user-img(style="background-image: url(static/svg/user.svg);")
+    .right-sidebar__user-control-wrapper
+      +link("right-sidebar__user-exit link_white")
+        +text("text_size_x-medium text_light")
+          ="Выход"
+      p.right-sidebar__user-name
+        +text("text_size_x-medium text_bold")
+          ="Константин К."
+      +label("label_white label_border_none text_size_small")
+        ="670 баллов"
+      .right-sidebar__user-control
+        +link("link_white", {href: '/profile.html'})
+          +text("text_size_x-medium")
+            ="Профиль"
+        +link("link_white", {href: '/order-list.html'})
+          +text("text_size_x-medium")
+            ="История заказов"
+
+  +list("list_ident right-sidebar__auth")
+    +list__item("list__item_inline")
+      +link("right-sidebar__auth-link", {href: '/login.html'})
+        +text("text_size_x-medium text_bold text_big text_color_contrast") Вход
+    +list__item("list__item_inline")
+      +link("right-sidebar__auth-link", {href: '/registration.html'})
+        +text("text_size_x-medium text_bold text_big text_color_contrast") Регистрация
+
+  +list("list_ident right-sidebar__list right-sidebar__list_category")
+    +list__item
+      +link('link_block', {href: '/catalog.html'})
+        +text("text_size_xx-large text_color_contrast") Каталог товаров
+    +list__item
+      +link('link_block', {href: '/actions-list.html'})
+        +text("text_size_xx-large text_color_contrast") Акции и спецпредложения
+    +list__item
+      +link('link_block', {href: '/news-list.html'})
+        +text("text_size_xx-large text_color_contrast") Новости
+    +list__item
+      +link('link_block', {href: '/bonus.html'})
+        +text("text_size_xx-large text_color_contrast") Бонусные баллы
+
+  +list("right-sidebar__list")
+    +list__item("list__item_ident")
+      +link("right-sidebar__goods-link link_block", {href: '/basket.html'})
+        +icon("icon_sidebar-shoping-cart")
+        +text("text_size_x-medium text_color_contrast") Корзина
+        +badge("badge_color_white badge_circle text") 2
+    +list__item("list__item_ident")
+      +link("right-sidebar__goods-link link_block", {href: '/bookmarks.html'})
+        +icon("icon_sidebar-favorites")
+        +text("text_size_x-medium text_color_contrast") Избранные товары
+        +badge("badge_empty text") 2
+    +list__item("list__item_ident")
+      +link("right-sidebar__goods-link link_block", {href: '/compare-list.html'})
+        +icon("icon_sidebar-compare")
+        +text("text_size_x-medium text_color_contrast") Сравнение товаров
+        +badge("badge_empty text") 2
+
+  +list("list_ident right-sidebar__list")
+    +text("text_size_x-small text_color_contrast text_big right-sidebar__title-text") О магазине
+    +list__item()
+      +link('link_block', {href: '/delivery.html'})
+        +text("text_size_x-medium text_color_contrast") Доставка товаров
+    +list__item()
+      +link('link_block', {href: '/payment-methods.html'})
+        +text("text_size_x-medium text_color_contrast") Способы оплаты
+    +list__item()
+      +link('link_block', {href: '/quarantee.html'})
+        +text("text_size_x-medium text_color_contrast") Гарантия
+    +list__item()
+      +link('link_block', {href: '/contacts.html'})
+        +text("text_size_x-medium text_color_contrast") Контакты

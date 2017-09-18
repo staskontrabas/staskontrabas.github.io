@@ -1,0 +1,12 @@
+mixin bonus-item(style, args)
+  .bonus-item__left
+    .bonus-item__number
+      +text('text_bold text_size_large')
+        =args.number
+    .bonus-item__date
+      +text('text_color_accent text_size_medium')
+        =args.date   
+  .bonus-item__right
+    .bonus-item__balls
+      +text('text_size_xxx-large text_bold '+args.ballsColor)
+        =args.balls

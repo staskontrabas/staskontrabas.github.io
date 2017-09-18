@@ -1,0 +1,62 @@
+.compare-list {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	&__item {
+		position: relative;
+	}
+	&__title {
+		padding: 0 10px;
+		font-size: 12px;
+		letter-spacing: 1px;
+		color: #4a4a4a;
+		text-transform: uppercase;
+	}
+	&__header {
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+	&__right {
+		float: right;
+		.clear-list {
+			position: relative;
+			top: -4px;
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 5px;
+			}
+		}
+	}
+	.list__item {
+		background: #fff;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 2px;
+		position: relative;
+		padding: 13px 40px 8px 10px;
+		&:first-of-type {
+			border-radius: 2px 2px 0 0;
+		}
+		&:last-of-type {
+			border-radius: 0 0 2px 2px;
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		.icon_chevron {
+			position: absolute;
+			right: 10px;
+			top: 17px;
+		}
+	}
+	&__count {
+		position: absolute;
+		right: 25px;
+		top: 16px;
+		color: #4a4a4a;
+	}
+}

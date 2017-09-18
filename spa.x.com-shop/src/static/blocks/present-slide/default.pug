@@ -1,0 +1,15 @@
+mixin present-slide(style, args)
+  - block_style = 'present-slide'
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  - args.link = args.link ? args.link : '#'
+  
+  div(class=style)
+    a.present-slide__image(href=args.link, style=args.img)
+    +button('offer_buy-button category-good__item-button present-slide__button')
+      +text('text_size_large text_bold')
+        !=(args.price)
+      +icon('icon_sidebar-shoping-cart')
+    a.present-slide__title(href=args.link)
+      +text('text_size_small')
+        =(args.title)

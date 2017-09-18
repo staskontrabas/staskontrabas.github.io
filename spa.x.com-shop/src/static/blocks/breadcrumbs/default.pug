@@ -1,0 +1,13 @@
+mixin breadcrumbs(style, args)
+  - block_style = "breadcrumbs"
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  - args.links = args.links ? args.links : [['Главная', '/']]
+  div(class=style)
+    .breadcrumbs__wrap
+      each link in args.links
+        if (url = link[1]) > ''
+          a(href=url, title=link[0])= link[0]
+          span.icon.icon_breadcrumbs-delimeter
+        else
+          span= link[0]

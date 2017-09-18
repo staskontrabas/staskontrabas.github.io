@@ -1,0 +1,81 @@
+.modal__content-calendar {
+  padding-top: 10px;
+}
+
+.calendar {
+
+  &__table {
+      width: 100%;
+      margin-bottom: 20px;
+      border-collapse: collapse;
+
+    th {
+      padding: 8px 0;
+      border: 1px solid @color_white;
+      color: #4a4a4a;
+      font-size: 12px;
+
+      &:nth-child(6),
+      &:nth-child(7) {
+        color: #fe3f35
+      }
+
+    }
+
+    td {
+      border: 1px solid @color_white;
+    }
+
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 7px 0 4px;
+    border-radius: 0;
+    background-image: linear-gradient(to bottom, #f2f2f2, #e1e1e1);
+    text-align: center;
+    color: #59a500;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+
+    &.disabled {
+      position: relative;
+      background-color: #f2f2f2;
+      background-image: none;
+      color: #9b9b9b;
+
+    }
+
+    &.active {
+      background-color: #58a500;
+      background-image: none;
+      box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.5);
+      color: @color_white;
+    }
+
+  }
+
+  &__crossed{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 2px;
+    margin-left: -6px;
+    background-color: #9b9b9b;
+  }
+
+  &__main-button {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 11px 0 8px;
+    background-color: @color_primary;
+    line-height: inherit;
+  }
+
+}

@@ -1,0 +1,22 @@
+// Персональные данные
++form('personal-info-form')
+	.personal-info-form__wrap
+		+form-field('personal-info-form__field')
+			+input('input_format_wide', {placeholder: 'Константинопольский'})
+		+form-field('personal-info-form__field')
+			+input('input_format_wide', {placeholder: 'Константин'})
+		+form-field('personal-info-form__field')
+			+input('input_format_wide', {placeholder: 'Константинович'})
+		+form-field('personal-info-form__field form-field_indent-left')
+			+input('input_format_wide input_icon-left', {value: '8 926 562-12-34'})
+			+icon('icon_phone')
+		.personal-info-form__title Реквизиты доступа
+		+form-field('personal-info-form__field form-field_indent-left')
+			+input('input_format_wide input_icon-left', {placeholder: 'kostya20017@yandex.ru'})
+			+icon('icon_email')
+		+form-field('personal-info-form__field personal-info-form__field-pass form-field_indent-left field_button')
+			+input('input_format_wide input_icon-left', {type: 'password', value: '***********'})
+			+icon('icon_password')
+			+button('', {link: 'js-modal-change-pass', text: 'Изменить пароль'})
+	+form-field('personal-info-form__button')
+		+button('button_success button_size_xlarge button_format_wide', {text: 'Сохранить изменения'})

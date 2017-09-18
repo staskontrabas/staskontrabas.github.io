@@ -1,0 +1,31 @@
+.auth-form {
+  font-family: 'Circe';
+  width: 268px;
+  margin: 0 auto;
+  &:after,
+  &:before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &__form-field {
+    margin: 20px 0;
+  }
+  &__links {
+    text-align: center;
+    margin: 15px 0 30px;
+    a {
+      margin: 0 22px;
+      font-size: 14px;
+      background: none;
+      height: auto;
+      font-weight: normal;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

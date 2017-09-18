@@ -1,0 +1,13 @@
+mixin actions-item(style, args)
+  - block_style = 'actions-item'
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  - args.link = args.link ? args.link : 'action-detail.html'
+
+  a(class=style, href=args.link)
+    img.actions-item__img(src=args.img)
+    span.actions-item__text
+      span.actions-item__date
+        =args.date
+      span.actions-item__title
+        =args.title

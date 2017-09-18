@@ -1,0 +1,18 @@
+.header
+  a.header__menu(href="#")
+    +icon("icon_gamburger")
+  a.header__logo(href="index.html")
+    +icon("icon_xcom-logo")
+  .header__right-menu
+    a.header__search(href="#", data-type="open-search")
+      +icon("icon_header-search")
+    if title == 'Корзина'
+      a.header__cart(href="/basket.html").active
+        +icon("icon_shoping-cart")
+        +badge("badge_type_danger badge_absolute badge_pos_top-right")
+          ="2"
+    else
+      a.header__cart(href="/basket.html")
+        +icon("icon_shoping-cart")
+        +badge("badge_type_danger badge_absolute badge_pos_top-right")
+          ="2"

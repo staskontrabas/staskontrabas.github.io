@@ -1,0 +1,27 @@
+mixin featured-product(style, args)
+  - block_style = "featured-product"
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  div(class=style)
+    .featured-product__close
+      a(href="/good.html", data-type="remove")
+        +icon('icon_remove-active')
+    .featured-product__prevu
+      a(href="/good.html")
+        img(src=args.prevu, alt="")
+    .featured-product__caption
+      .featured-product__title
+        +text('text_size_xx-large')
+          =args.title
+      .featured-product__description
+        +text('text_size_x-small')
+          =args.description
+      .featured-product__add-basket
+        if args.onsale == false
+          +button('offer_out-stock')
+            | Нет в продаже
+        else
+          +button('offer_buy-button button_size_xsmall')
+            =args.price 
+            | &nbsp;₽
+            +icon('icon_small-button-cart')

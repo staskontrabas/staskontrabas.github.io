@@ -1,0 +1,154 @@
+.footer
+  .footer__contacts-wrapper
+
+    +layout()
+      +layout__col()
+        .footer__contacts
+          +text("text_size_small")
+            ="Для звонков из Москвы и Московской области"
+          a.footer__contacts-phone(href="tel:+74957999669")
+            +icon("icon_phone-blue")
+            +text()
+              ="8 495 799-96-69"
+
+      +layout__col()
+        .footer__contacts
+          +text("text_size_small")
+            ="Для звонков из других регионов РФ, бесплатно"
+          a.footer__contacts-phone(href="tel:+78002000069")
+            +icon("icon_phone-blue")
+            +text()
+              ="8 800 200-00-69"
+
+    p.footer__callback-text 
+      +text("text_size_small")
+        ="Не смогли дозвониться? — "
+      +button('footer_callback-link', {link:"js-modal-1"})
+        +text("text_size_small")
+          ="Оставьте заявку на обратный звонок"
+      br
+      +text("text_size_small")
+        ="и мы перезвоним Вам в течение 15 минут"
+
+  .footer__controls-wrapper
+
+    +layout()
+      +layout__col()
+        +layout()
+          +layout__col()
+
+            +dropdown("dropdown_footer-menu")
+              +text("text_size_large dropdown__title")
+                  ="О магазине"
+              +icon("icon_chevron-down")
+              +dropdown__content()
+                +list("footer__menu")
+                  +list__item("list__item_block list__item_border")
+                    +link('link_black link_block footer__menu-link', {href: '/delivery.html'})
+                      +text("text_size_x-medium")
+                        ="Доставка товаров"
+                  +list__item("list__item_block list__item_border")
+                    +link('link_black link_block footer__menu-link', {href: '/payment-methods.html'})
+                      +text("text_size_x-medium")
+                        ="Способы оплаты"
+                  +list__item("list__item_block list__item_border")
+                    +link('link_black link_block footer__menu-link', {href: '/quarantee.html'})
+                      +text("text_size_x-medium")
+                        ="Гарантия"
+                  +list__item("list__item_block list__item_border")
+                    +link('link_black link_block footer__menu-link', {href: '/contacts.html'})
+                      +text("text_size_x-medium")
+                        ="Контакты"
+
+            +list("footer__menu")
+              +list__item("list__item_block")
+                +text("text_size_large footer__menu-title", {href: '/about.html'})
+                  ="О магазине"
+              +list__item("list__item_block")
+                +link('link_black link_block footer__menu-link', {href: '/delivery.html'})
+                  +text("text_size_x-medium")
+                    ="Доставка товаров"
+              +list__item("list__item_block")
+                +link('link_black link_block footer__menu-link', {href: '/payment-methods.html'})
+                  +text("text_size_x-medium")
+                    ="Способы оплаты"
+              +list__item("list__item_block")
+                +link('link_black link_block footer__menu-link', {href: '/quarantee.html'})
+                  +text("text_size_x-medium")
+                    ="Гарантия"
+              +list__item("list__item_block")
+                +link('link_black link_block footer__menu-link', {href: '/contacts.html'}) 
+                  +text("text_size_x-medium")
+                    ="Контакты"
+
+          +layout__col()
+
+            +dropdown("dropdown_footer-menu")
+              +text("text_size_large dropdown__title")
+                ="Помощь"
+              +icon("icon_chevron-down")
+              +dropdown__content()
+                +list("footer__menu")
+                  +list__item("list__item_block list__item_border")
+                    +link('link_black link_block footer__menu-link', {href: '/how-order.html'})
+                      +text("text_size_x-medium")
+                        ="Как сделать заказ"
+                  +list__item("list__item_block list__item_border")
+                    +link('link_black link_block footer__menu-link', {href: '/bonus.html'})
+                      +text("text_size_x-medium")
+                        ="Бонусные баллы Икском"
+                  //- +list__item("list__item_block list__item_border")
+                  //-   +link('link_black link_block footer__menu-link', {href: '/consultation.html'})
+                  //-     +text("text_size_x-medium")
+                  //-       ="Чат с консультантом"
+
+            +list("footer__menu")
+              +list__item("list__item_block")
+                +text("text_size_large, footer__menu-title", {href: '/help.html'})
+                  ="Помощь"
+              +list__item("list__item_block")
+                +link('link_black link_block footer__menu-link', {href: '/how-order.html'})
+                  +text("text_size_x-medium")
+                    ="Как сделать заказ"
+              +list__item("list__item_block")
+                +link('link_black link_block footer__menu-link', {href: '/bonus.html'})
+                  +text("text_size_x-medium")
+                    ="Бонусные баллы Икском"
+              //- +list__item("list__item_block")
+              //-   +link('link_black link_block footer__menu-link', {href: '/consultation.html'})
+              //-     +text("text_size_x-medium")
+              //-       ="Чат с консультантом"
+
+      +layout__col()
+
+        .footer__store-wrapper
+          +button('application_button application_button_appstore footer__store-button')
+            +icon('icon_appstore')
+          +button('application_button application_button_appstore footer__store-button')
+            +icon('icon_google-play')
+
+        .footer__social-wrapper
+          p.footer__social-title
+            +text("text_size_x-medium")
+              ="Икском шоп в соцсетях"
+          +button('social_button social_button_vk')
+            +icon('icon_vk')
+          +button('social_button social_button_facebook')
+            +icon('icon_facebook')
+          +button('social_button social_button_odnoklassniki')
+            +icon('icon_odnoklassniki')
+          +button('social_button social_button_twitter')
+            +icon('icon_twitter')
+          +button('social_button social_button_instagramm')
+            +icon('icon_instagramm')
+          +button('social_button social_button_youtube')
+            +icon('icon_youtube')
+
+    .footer__copyright.mobile-hidden
+      +text("text_size_small")
+        ="© 2017 Икском Шоп"
+
+  +button('button_size_large button_format_wide to-desktop')
+    +icon('icon_to-desktop')
+    +text("text_size_large")
+      ="На основную версию сайта"

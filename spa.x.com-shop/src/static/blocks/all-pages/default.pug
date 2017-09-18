@@ -1,0 +1,9 @@
+mixin all-page(style, args)
+  - block_style = "all-pages__item"
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  +list__item(block_style)
+    +link('', {href: args.link, target: '_blank'})
+      =args.title
+    if block
+      block

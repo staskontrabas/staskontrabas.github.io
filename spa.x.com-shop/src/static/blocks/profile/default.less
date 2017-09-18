@@ -1,0 +1,47 @@
+.profile {
+	&__layout {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	&__item {
+		padding: 14px 125px 8px 12px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		background: @color_white;
+		line-height: 20px;
+		position: relative;
+		&:first-child {
+			border-radius: 2px 2px 0 0;
+		}
+		&:last-child {
+			border-radius: 0 0 2px 2px;
+			border: none;
+		}
+	}
+	&__edit {
+		position: absolute;
+		width: 30px;
+		height: 100%;
+		right: 0;
+		top: 0;
+		text-align: center;
+		.icon {
+			padding-top: 25px;
+		}
+	}
+	&__balls {
+		position: absolute;
+		top: 50%;
+		margin-top: -18px;
+		right: 11px;
+		z-index: 10;
+	}
+	&__manager {
+		margin-bottom: 30px;
+	}
+	&__checks {
+		padding-bottom: 20px;
+		.layout {
+			margin-bottom: 20px;
+		}
+	}
+}

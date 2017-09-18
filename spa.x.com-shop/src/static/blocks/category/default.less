@@ -1,0 +1,372 @@
+.category {
+
+  &__item {
+    display: block;
+    padding: 5px 20px;
+    background-color: @color_white;
+    border-bottom: 1px solid #e5e5e5;
+    color: @color_black;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+  }
+
+  &__icon {
+    float: left;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 12px 0;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 0;
+  }
+
+  &__text {
+    display: block;
+    padding: 10px 0;
+
+    .text {
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+  }
+
+}
+
+.category-exclusive-wrapper {
+  padding: 20px 15px;
+}
+
+.category-exclusive {
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+.category-selection {
+  margin-bottom: 20px;
+  background-color: @color_white;
+
+  &__item {
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+
+    &:last-child {
+      border-bottom: 1px solid transparent;
+    }
+
+    &.active {
+
+      .category-selection__button {
+        padding-left: 30px;
+
+        .text {
+          color: @color_black;
+        }
+
+      }
+
+      .category-selection__reset {
+        display: block;
+      }
+
+
+    }
+
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    text-align: left;
+    line-height: inherit;
+
+    .text {
+      display: block;
+      margin: 10px 0 10px;
+    }
+
+  }
+
+  &__reset {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -10px;
+    border: 0;
+    background-color: transparent;
+    font-size: 0;
+
+    &:focus {
+      outline: none;
+      background-color: transparent;
+    }
+
+  }
+
+}
+
+.category__serach-goods{
+  display: block;
+  margin: 30px 0 15px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.category__quantity-goods {
+  display: block;
+  padding: 6px 0 3px;
+  background-color: @color_white;
+  text-align: center;
+  line-height: 1;
+}
+
+.category-sorting {
+  padding: 10px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: @color_white;
+  text-align: center;
+  font-size: 0;
+
+  &__button {
+    vertical-align: middle;
+    display: inline-block;
+    width: 120px;
+    height: auto;
+    padding: 4px 5px;
+    border-radius: 0;
+    border-top: solid 1px @color_primary;
+    border-bottom: solid 1px @color_primary;
+    border-right: solid 1px @color_primary;
+    background-color: @color_white;
+    color: @color_primary;
+    line-height: inherit;
+
+    &.active {
+      background-color: @color_primary;
+      color: @color_white;
+
+      .category-sorting__caret {
+        display: inline-block;
+      }
+
+    }
+
+    &:first-child {
+      border-left: solid 1px @color_primary;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+
+  }
+
+  &__caret {
+    display: none;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-top: 7px solid rgba(255, 255, 255, 0.6);
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+  }
+
+}
+
+.category-goods-wrapper {
+
+  .pagination {
+    margin-top: 20px;
+  }
+}
+
+.category-good {
+
+  &__list {
+    background-color: @color_white;
+  }
+
+  &__label-wrapper {
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .label {
+      display: inline-block;
+      margin-right: 5px;
+      padding: 4px 7px 0px;
+      line-height: inherit;
+    }
+
+  }
+
+  &__item {
+    padding: 10px 20px 30px;
+    border-bottom: 1px solid #e5e5e5;
+
+    &:last-child {
+      border-color: transparent;
+    }
+
+  }
+
+  &__item-content {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+  }
+
+  &__item-left {
+    float: left;
+    width: 315px;
+  }
+
+  &__item-image {
+    width: 95px;
+    height: 95px;
+    margin: 0 auto;
+    border-radius: 2px;
+    border: 0.5px solid rgba(0, 0, 0, 0.05);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &_cap {
+      padding-top: 20px;
+      background-color: #f5f5f5;
+      text-align: center;
+
+      .text {
+        display: block;
+        margin-top: 5px;
+      }
+
+    }
+
+  }
+
+  &__item-text {
+    margin-left: 315px;
+    padding-right: 75px;
+    overflow: hidden;
+
+    .mark {
+      display: block;
+      margin: 10px 0;
+
+      &:before {
+        top: 2px;
+      }
+
+    }
+
+  }
+
+  &__item-title {
+    display: block;
+    line-height: 1;
+    color: @color_black;
+  }
+
+  &__item-info {
+    display: block;
+    color: #4e4e4e;
+  }
+
+  &__item-button {
+    height: auto;
+    padding: 0 10px;
+    background: #e8b23b;
+    background: -webkit-linear-gradient(#e8b23b 0%, #f76b1c 40%, #f76b1c 70%, #f76b1c 100%);
+    background: -o-linear-gradient(#e8b23b 0%, #f76b1c 40%, #f76b1c 70%, #f76b1c 100%);
+    background: linear-gradient(#e8b23b 0%, #f76b1c 40%, #f76b1c 70%, #f76b1c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8b23b', endColorstr='#f76b1c', GradientType=0);
+    font-size: 18px;
+    line-height: inherit;
+
+    .text {
+      display: inline-block;
+      line-height: inherit;
+
+      &:first-child {
+        padding-top: 4px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      &:last-child {
+        vertical-align: top;
+        padding-top: 5px;
+        padding-left: 8px;
+      }
+
+    }
+
+    .icon {
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+      padding-left: 5px;
+      border: 0;
+      line-height: inherit;
+
+      &:before {
+        top: -3px;
+      }
+
+    }
+
+    &.active {
+      background: #fe3f35;
+    }
+
+  }
+
+  &__select-wrapper {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+
+  &__select-button {
+    height: auto;
+    padding: 0 10px;
+    background-color: transparent;
+    line-height: inherit;
+  }
+
+}

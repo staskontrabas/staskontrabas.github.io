@@ -1,0 +1,16 @@
+mixin good-slide(style, args)
+  - block_style = 'good-slide'
+  - style = style ? block_style+" "+style : block_style
+  - args = args ? args : {}
+  - args.link = args.link ? args.link : '#'
+  
+  div(class=style)
+    a(href=args.link)
+      img.good-slide__image(src=args.img)
+    +button('offer_buy-button category-good__item-button good-slide__button')
+      +text('text_size_large text_bold')
+        !=(args.price)
+      +icon('icon_sidebar-shoping-cart')
+    a.good-slide__title(href=args.link)
+      +text('text_size_x-medium')
+        =(args.title)

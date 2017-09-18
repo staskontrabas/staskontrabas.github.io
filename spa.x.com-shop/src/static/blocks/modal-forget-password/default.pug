@@ -1,0 +1,9 @@
++modal("modal_hidden modal_size_small modal_ident modal__recovery-pass-form", {id:"js-modal-forget-password", type:"simple", title:"Восстановление пароля"})
+  +modal__content()
+    +form('recovery-pass-form')
+      .recovery-pass-form__wrap
+        +form-field('recovery-pass-form__field')
+          +input('input_default input_animate-top', {placeholder: 'Электронная почта'})
+        .recovery-pass-form__caption Введите свой адрес электронной почты и мы вышлем Вам новый пароль.
+  +modal__footer()
+    +button('button_size_medium', {text: 'Отправить'})
