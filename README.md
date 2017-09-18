@@ -1,1 +1,1 @@
-# game1
+* [калькулятор](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/calculator) - простой калькулятор, подсчитывающий стоимость квартир. JavaScript, ООП, jQuery [demo](https://staskontrabas.github.io/calculator/)
