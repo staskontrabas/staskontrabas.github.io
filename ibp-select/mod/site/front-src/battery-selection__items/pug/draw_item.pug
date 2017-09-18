@@ -1,0 +1,89 @@
+mixin draw_item()
+  .container-items__item
+    .container-items__card
+      .container-items__img
+        .container-items__img__box
+          img(src="img/battery-selection__items/bitmap_2.png")
+      .container-items__description
+        div
+          a.container-items__name Irbis BLP12-24
+        ul
+          li
+            div
+              span Ёмкость
+            div
+              span 18Ач
+          li
+            div
+              span Напряжение
+            div
+              span 12В
+          li
+            div
+              span Габариты
+            div
+              span 151 x 98 x 94 мм
+          li
+            div
+              span Гарантия
+            div
+              span 12 месяцев
+        .additional
+          .additional__btn
+            span Модульная батарея 
+            span (2 модуля)
+          .container-items__help
+            .container-items__help__box
+              .container-items__help__close
+              .container-items__help__title Модульная батарея
+              p Модульные батареи ИБП представляют собой единый конструктив (стойку), куда устанавливаются силовые модули. 
+              p Увеличением их числа наращивается мощность и/или привносится необходимая для отказоустойчивой работы избыточность. 
+      .container-items__basket
+        .container-items__count
+          .container-items__minus
+          input(value='2 шт.')
+          .container-items__plus
+        .container-items__total
+          .container-items__total-value 3 640 
+            span &#8381;
+          .container-items__total-desc 1 630 &#8381; / шт.
+        .container-items__comm На заказ, от 3 до 20 дней
+    .container-items__inner
+      .container-items__head
+        .title Совместимые батареи-модули
+        .require(name='high') необходимо 2 шт.
+      - for(var k=0; k<3; k++){
+      .container-items__item
+        .container-items__card
+          .container-items__img
+            .container-items__img__box
+              img(src="img/battery-selection__items/bitmap.png")
+          .container-items__description
+            div
+              a.container-items__name Irbis BLP12-24
+            ul
+              li
+                div
+                  span Ёмкость
+                div
+                  span 18Ач
+              li
+                div
+                  span Напряжение
+                div
+                  span 12В
+              li
+                div
+                  span Габариты
+                div
+                  span 151 x 98 x 94 мм
+          .container-items__basket
+            .container-items__count
+              .container-items__minus
+              input(value='2 шт.')
+              .container-items__plus
+            .container-items__total
+              .container-items__total-value 3 640 &#8381;
+              .container-items__total-desc 1 630 &#8381; / шт.
+            .container-items__comm На заказ, от 3 до 20 дней
+      - }

@@ -1,0 +1,180 @@
+#popupBackground, #popupWrapper {
+    position: fixed;
+    left:     0;
+    top:      0;
+    width:    100%;
+    height:   100%;
+}
+
+#popupBackground {
+    background-color: #ffffff;
+}
+
+#popupWrapper .wrap {
+    vertical-align: middle;
+    text-align:     center;
+}
+
+#windowBox {
+    display:          inline-block;
+    margin:           0 auto;
+    background-color: #ffffff;
+    text-align:       left;
+}
+
+a#closeWindow {
+    border-bottom: none;
+    display:       block;
+    width:         25px;
+    height:        25px;
+    background:    url(../images/popup/close.gif) left top no-repeat;
+    float:         right;
+    clear:         both;
+    margin-left:   -25px;
+}
+
+#windowBox h1 {
+    font:        normal 24px Arial;
+    line-height: 18px;
+    margin:      20px 0;
+}
+
+#windowBox h2, #windowBox h2 a {
+    font:        normal 18px Arial;
+    line-height: 18px;
+}
+
+#windowBox h3 {
+    font:   bold 14px Tahoma;
+    margin: 2px 0;
+}
+
+#windowBox p {
+    font:          normal 12px Verdana;
+    line-height:   18px;
+    margin-bottom: 10px;
+}
+
+#windowBox table {
+    border-collapse: collapse;
+}
+
+#windowBox table td {
+    padding: 5px;
+}
+
+#windowBox input {
+    width: 200px;
+}
+
+#windowBox input.short {
+    width: auto;
+}
+
+#windowBox input#cook {
+    width:    20px;
+    position: relative;
+    top:      2px;
+}
+
+#windowBox td#loginResult, #windowBox td#recall_result {
+    color: #d12626;
+}
+
+#previewImages {
+    vertical-align: top;
+    text-align:     center;
+    margin:         0 20px 20px 20px;
+    min-width:      504px;
+}
+
+#windowBox #previewImages .item {
+    margin:         6px;
+    cursor:         pointer;
+    vertical-align: middle;
+}
+
+#windowBox img.active {
+    margin: 5px;
+    cursor: pointer;
+}
+
+#popup_login_form table tr td, #popup_remind_form table tr td {
+    text-align: left;
+}
+
+.tech-support-request-form-window {
+    background-color: #f0eff0 !important;
+    border:           1px solid #aeadae;
+}
+
+#tech_support_request_form td {
+    vertical-align: baseline;
+}
+
+#tech_support_request_form td:first-child {
+    padding-right: 15px;
+}
+
+#tech_support_request_form td:first-child {
+    padding-right: 15px;
+}
+
+#tech_support_request_form .lead {
+    font-weight: bold;
+}
+
+#tech_support_request_form .lead span {
+    font-weight: normal;
+}
+
+#tech_support_request_form .lead ul {
+    list-style:    none;
+    margin-bottom: 10px;
+}
+
+#tech_support_request_form .lead ul li {
+    padding-left: 20px;
+}
+
+#tech_support_request_form label {
+    font-weight: bold;
+}
+
+#tech_support_request_form input {
+    padding-left:  5px;
+    padding-right: 5px;
+}
+
+#tech_support_request_form button {
+    /* <gradient> */
+    background:            #1c85d0;
+    background:            url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFjODVkMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNDUwYTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:            -moz-linear-gradient(top, #1c85d0 0, #2450a3 100%);
+    background:            -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1c85d0), color-stop(100%, #2450a3));
+    background:            -webkit-linear-gradient(top, #1c85d0 0, #2450a3 100%);
+    background:            -o-linear-gradient(top, #1c85d0 0, #2450a3 100%);
+    background:            -ms-linear-gradient(top, #1c85d0 0, #2450a3 100%);
+    background:            linear-gradient(to bottom, #1c85d0 0, #2450a3 100%);
+    filter:                progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c85d0', endColorstr='#2450a3', GradientType=0);
+    /* </gradient> */
+    -webkit-border-radius: 2px;
+    -moz-border-radius:    2px;
+    border-radius:         2px;
+    border:                none;
+    cursor:                pointer;
+    color:                 white;
+    font-size:             13px;
+    padding:               2px 6px;
+}
+
+#tech_support_request_form .field__errors div,
+#tech_support_request_form .form__errors div {
+    margin-top: 5px;
+}
+
+#tech_support_request_form .form__success {
+    display:     none;
+    font-size:   14px;
+    line-height: 1.5
+}

@@ -1,0 +1,118 @@
+#cleen_page_compare p {
+    margin-bottom: 10px;
+}
+
+#cleen_page_compare h3 {
+    font:        bold 16px Tahoma;
+    line-height: 28px;
+}
+
+#goods_compare h1 {
+    font:          normal 30px Tahoma;
+    margin-bottom: 20px;
+    color:         #262626;
+}
+
+#goods_compare td {
+    padding: 5px 20px 5px 5px;
+}
+
+#goods_compare td.good_head {
+    vertical-align: bottom;
+}
+
+#goods_compare td.good_head img {
+    margin: 10px 0;
+}
+
+#goods_compare td.prop_call, #goods_compare td.cost {
+    width:       260px;
+    white-space: nowrap;
+}
+
+#goods_compare td.delimiter:hover {
+    background-color: #ffffff;
+}
+
+#goods_compare td.prop_val, #goods_compare td.buy {
+    width: 250px;
+}
+
+#goods_compare tr.prop_line:hover {
+    background-color: #f2f2f2;
+}
+
+#goods_compare span.price {
+    font: bold 16px Tahoma;
+}
+
+#goods_compare .compare_basket_button {
+    margin-top: 10px;
+}
+
+#goods_compare .compare_basket_button input {
+    font: normal 11px Tahoma;
+}
+
+.compare_delimiter td {
+    background: url(images/compare_delimiter.gif) left center repeat-x;
+}
+
+.compare_delimiter td span {
+    padding:          0 4px;
+    background-color: #ffffff;
+    margin-left:      -3px;
+}
+
+.compare_delimiter td a {
+    text-decoration: none;
+    border-bottom:   1px dashed #000000;
+    color:           #000000;
+}
+
+.compare_delimiter td a:hover {
+    border-bottom: none;
+}
+
+span.types_delimiter {
+    height:  50px;
+    width:   100px;
+    display: block;
+}
+
+p#head_phones_compare {
+    line-height: 16px;
+    margin-top:  22px;
+}
+
+#head_phones_compare span.phone {
+    font:        bold 16px Tahoma;
+    line-height: 28px;
+}
+
+p#compare_notice {
+    text-indent:   -9px;
+    color:         #929292;
+    font-size:     11px;
+    margin-bottom: 20px;
+}
+
+td.same_selector a {
+    text-decoration: none;
+    border-bottom:   1px dashed #000000;
+    color:           #000000;
+    margin:          4px 8px;
+    padding:         0;
+}
+
+td.same_selector a:hover {
+    border-bottom: none;
+}
+
+td.same_selector a.act {
+    border-bottom:    none;
+    background-color: #d5d5d5;
+    padding:          4px 8px;
+    margin:           0;
+    cursor:           default;
+}

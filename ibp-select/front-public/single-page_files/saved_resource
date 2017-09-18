@@ -1,0 +1,5 @@
+var remote_sync_user = {"k":0};var remote_user = "guest";
+var remote_basket = {"data":{},"count":{"sub_total":0,"total_goods":0,"weight":0,"total":0,"points_use_limit":0,"reward":0,"reward_subtotal":0},"dlv":{"city":48,"delivery":8,"payment":17,"outlet":0,"possible_delivery":{"0":8,"1":76,"2":9,"3":77,"4":4,"5":25,"6":23,"7":21},"possible_delivery_costs":{"8":0,"76":0,"9":0,"77":0,"4":0,"25":110,"23":110,"21":110},"possible_outlet":{},"possible_payment":{"0":17,"1":2,"2":3,"3":24,"4":14,"5":0},"tinkoff_credit":1,"disable_crimea":"","cost":0,"short_names":{"city_name":"Челябинск","delivery_name":"ТК \"ПЭК\" (до склада; предоплата 100%)","payment_name":"QIWI Кошелек","outlet_name":""}},"pk_user":1,"cisco_off":0,"user_type":0,"max":{"good":""},"onsale":0,"dlv_msk_free":1,"dlv_pek_free":1,"dlv_russian_post_free":1,"dlv_pek_calc_off":0,"dlv_ems_contract_off":0,"dlv_spsr_dpd_contract_off":0,"dlv_russian_post_contract_off":0,"block_order":{}};
+var is_wholesaler = 0;
+var disable_points = 0;
+var _verifiedSession = false;

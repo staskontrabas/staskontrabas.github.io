@@ -1,0 +1,261 @@
+doctype html
+// saved from url=(0039)http://b2b.xcom.ru/store/registration/#
+html(lang='ru-RU', prefix='ya: http://webmaster.yandex.ru/vocabularies/')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title XCOM-B2B | Регистрация
+    meta(name='description', content='XCOM-B2B | Регистрация XCOM-B2B')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='shortcut icon', href='http://b2b.xcom.ru/favicon.ico')
+    link(rel='stylesheet', href='./b2b_files/app.css')
+    link(rel='stylesheet', href='./b2b_files/popup.css')
+    link(rel='stylesheet', href='./b2b_files/compare.css')
+    link(rel="stylesheet" type="text/css" href="mod/static/battery-selection/css/main.css")
+    link(rel='alternate', type='application/rss+xml', href='http://b2b.xcom.ru/news/rss/')
+    script(type='text/javascript', async='', src='./b2b_files/watch.js')
+    script(async='', src='./b2b_files/analytics.js')
+    script(src='mod/static/battery-selection/libs/jquery-3.1.1.min.js')
+    script(type='text/javascript', src='./b2b_files/saved_resource')
+    script(type='text/javascript').
+      var _rtConsole = true;
+      var _site_url = "/store/";
+      var user_logged = 0;
+    script(type='text/javascript', src='./b2b_files/rt.2.0.js')
+    script(type='text/javascript', src='./b2b_files/misc.js')
+    script(type='text/javascript', src='./b2b_files/fx.js')
+    script(type='text/javascript', src='./b2b_files/popup.js')
+    script(type='text/javascript', src='./b2b_files/desc_compare.js')
+    <!-- script(type='text/javascript', src='./b2b_files/basket_widget.js') -->
+    script(src="mod/static/battery-selection/libs/jquery.ibp.js")
+    script(src="mod/static/battery-selection/js/script.js")
+    script(type='text/javascript').
+      _rt().requestUrl(_site_url + 'ajax_request/?');
+      set_jsonp_url(_site_url + 'jsonp_request/');
+      var _username = "Гостевой аккаунт",
+      is_first  = 1,
+      bw_obj    = {};
+      setInterval(function () {
+      if (is_first != 1) {
+      if (bw_obj.constructor == basket_widget) var callback = bw_obj.drawBillBox;
+      else var callback = function (){};
+      jsonp({interface:'basket',action:'handler',operation:'refresh'}, callback);
+      }
+      is_first = 0;
+      }, 60 * 1000);
+  body
+    #auth_form_dummy.hide
+      form(action='http://b2b.xcom.ru/store/return/', method='post')
+        input#auth_l(name='login', tabindex='1', type='text')
+        input#auth_p(name='password', tabindex='2', type='password')
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75741122-1', 'auto');
+      ga('send', 'pageview');
+    #container
+      #header
+        .columns
+          .left_column
+            .logo
+              a(href='http://b2b.xcom.ru/store/', title='На главную')
+                span
+            .catalog-menu
+              .header.gradient Каталог товаров
+              ul
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Компьютеры
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Компьютерные комплектующие
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Серверы и СХД
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Ноутбуки и планшеты
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Периферия и оргтехника
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Расходные материалы
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Источники бесперебойного питания
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Сетевое оборудование
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Телефония
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') СКС и Электрика
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Системы безопасности
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Программное обеспечение
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Торговое оборудование
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Бытовая техника
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Инструменты
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Климатическое оборудование
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Мобильные телефоны
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Фото и видео
+                li
+                  a(href='http://b2b.xcom.ru/store/registration/#') Телевизоры
+            ul.site-menu
+              li.gradient
+                a(href='http://b2b.xcom.ru/store/registration/#')
+                  | Каталог услуг
+              li.gradient
+                a(href='http://b2b.xcom.ru/store/registration/#')
+                  | Системный интегратор
+              li.gradient
+                a(href='http://b2b.xcom.ru/store/registration/#')
+                  | Акции
+            .banners
+              p  
+              p
+                a(href='http://b2b.xcom.ru/store/news/spetsialnye_tseny_naofisnye_kompyuteryhpskidki_zaobem/')
+                  img(src='./b2b_files/5825b4932b14b568190521', onmouseover='undefined', onmouseout='undefined', alt='', title='undefined')
+              p  
+          .center_column
+            .page-header
+              .inner
+                .info
+                  .tagline
+                    .inner
+                      p Специальный сервис
+                      p.justify
+                        span Н
+                        span а
+                        span и
+                        span л
+                        span у
+                        span ч
+                        span ш
+                        span и
+                        span е
+                        span  
+                        span ц
+                        span е
+                        span н
+                        span ы
+                  .phone
+                    span +7 (495) 7-999-600
+                  .schedule
+                    .inner
+                      .days
+                        ul
+                          li.working
+                            .name ПН
+                            .square
+                          li.working
+                            .name ВТ
+                            .square
+                          li.working
+                            .name СР
+                            .square
+                          li.working
+                            .name ЧТ
+                            .square
+                          li.working
+                            .name ПТ
+                            .square
+                          li
+                            .name СБ
+                            .square
+                          li
+                            .name ВС
+                            .square
+                      .time 9-18
+                .search.gradient
+                  form(name='search', action='http://b2b.xcom.ru/store/search/', method='get')
+                    input(name='o', type='hidden', value='n')
+                    .search-text
+                      input(type='search', autocomplete='off', name='s', value='', placeholder='Введите икскомое', disabled='disabled')
+                    .search-button
+                      button(type='submit', disabled='disabled')
+            .page-content
+              include battery-selection-b2b.pug
+          .right_column
+            .user-menu
+              a.btn.btn-blue.btn-block(href='http://b2b.xcom.ru/store/registration/#') Скачать прайс
+            #bill_box
+              #bill_table_heading.gradient Корзина
+              #bill_table
+                p В корзине нет товаров
+            //script(type='text/javascript').
+              //bw_obj = new basket_widget(remote_basket);
+            .banners
+      #footer
+        .columns
+          .left_column
+            .wire
+          .center_column
+            .wire
+          .right_column
+            .lighter
+              .text
+                p Все включено
+                p Все работает
+        p.address 125130, г. Москва, ул. Выборгская, 22 стр. 3, ст.м. Водный стадион
+        ul
+          li
+            a(href='http://www.xcom.ru/stock/', target='_blank') Акции
+          li
+            a(href='http://b2b.xcom.ru/store/registration/#') Новости
+          li
+            a(href='http://b2b.xcom.ru/store/registration/#') О компании
+          li
+            a(href='http://b2b.xcom.ru/store/registration/#') Схема проезда
+    script(type='text/javascript').
+      $('.block-universal').add('.block-right').each(function () {
+      if ($.trim($(this).html()) == '') {
+      $(this).hide();
+      }
+      });
+    noindex
+      // Yandex.Metrika counter
+      script(type='text/javascript').
+        (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+        try {
+        w.yaCounter40448625 = new Ya.Metrika({
+        id:40448625,
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+        trackHash:true
+        });
+        } catch(e) { }
+        });
+        var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+        if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+      // /Yandex.Metrika counter
+    #popupBackground.closePopup(style='display:none;')
+    table#popupWrapper.closePopup(style='display:none;', cellpadding='0', cellspacing='0')
+      tbody
+        tr
+          td.wrap.closePopup
+    #_rt_console(style='height:200px; width:100%; overflow:scroll; position:fixed; bottom:0; left:0; background:black; color:#00FF00; text-align:left; font:normal 12px Verdana; display:none; z-index:100000;')
+      div RegisterEventHandler load - for console
+      div RegisterEventHandler keydown
+      div DeleteEventHandler keyup
+      div DeleteEventHandler click
+      div RegisterEventHandler keyup
+      div RegisterEventHandler click
+      div RegisterEventHandler load
+      div DeleteEventHandler keyup
+      div DeleteEventHandler click
+      div RegisterEventHandler keyup
+      div RegisterEventHandler click

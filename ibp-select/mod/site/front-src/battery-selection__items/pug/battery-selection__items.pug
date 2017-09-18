@@ -1,0 +1,23 @@
+include draw_item.pug
+.result
+  span Найдено 7 совместимых батарей для замены:
+.container-items__outer
+  .container-items__head
+    .title Внутренние батареи
+    .count 4
+    .require(name='high') необходимо 2 шт.
+  .container-items__box
+    - var x = 4;
+    - for(var i=0; i<x; i++){
+    +draw_item()
+    -}
+.container-items__outer
+  .container-items__head
+    .title Внешние батареи
+    .count 3
+    .require допустимо 2 шт.
+  .container-items__box
+    - var x = 3;
+    - for(var i=0; i<x; i++){
+    +draw_item()
+    -}

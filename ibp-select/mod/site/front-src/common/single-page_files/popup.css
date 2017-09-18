@@ -1,0 +1,35 @@
+#popupBackground, #popupWrapper 
+{
+	position:fixed;
+	left:0;top:0;
+	width:100%;height:100%;
+}
+#popupBackground {background-color:#fff;}
+#popupWrapper  .wrap {vertical-align:middle;text-align:center;}
+#windowBox {display:inline-block; margin: 0px auto; background-color: #fff; text-align: left;}
+a#closeWindow
+{
+	display:block;
+	width:25px;height:25px;
+	background:url('images/popup/close.gif') left top no-repeat;
+	float: right;
+	clear: both;
+	margin-left: -25px;
+}
+
+
+#windowBox .heading1 {font:normal 24px Arial;line-height:18px;margin:20px 0px;}
+#windowBox .heading2, #windowBox .heading2 a {font:normal 18px Arial;line-height:18px;margin:14px 0px;}
+#windowBox .heading3 {font:bold 14px Tahoma;margin:2px 0px;}
+#windowBox p {font:normal 12px Verdana;line-height:18px;margin-bottom:10px;}
+#windowBox table {border-collapse:collapse;}
+#windowBox table td {padding:5px;}
+#windowBox input {width:200px;}
+#windowBox input#cook {width:20px;position:relative;top:2px;}
+#windowBox td#loginResult, #windowBox td#recall_result {color:#d12626;}
+
+#previewImages {vertical-align:top;text-align:center;margin: 0px 20px 20px 20px;min-width: 504px;}
+#windowBox #previewImages .item {margin:6px;cursor:pointer;vertical-align:middle;}
+#windowBox img.active {margin:5px;cursor:pointer;}
+
+#popup_login_form table tr td, #popup_remind_form table tr td {text-align:left;}

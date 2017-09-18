@@ -1,0 +1,3 @@
+var remote_user = "guest";
+var remote_basket = {"data":{},"count":{"sub_total":0,"total_goods":0,"weight":0,"total":0},"pk_user":1,"max":{"good":0}};
+var is_wholesaler = 0;
