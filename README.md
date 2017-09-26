@@ -3,3 +3,4 @@
 * [gpu_find](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/gpu_find) - калькулятор, подбирающий компьютеры на основе характеристик игр. JavaScript, ООП, jQuery [demo](https://staskontrabas.github.io/gpu_find/)
 * [ibp-select](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/ibp-select) - калькулятор, подбирающий комплектующие для ИБП. Gulp, Pug, JavaScript, ООП, jQuery, Less
 * [spa.x.com-shop](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/spa.x.com-shop) - SPA. ReactJS, Redux [demo](https://staskontrabas.github.io/spa.x.com-shop/build)
+* [slideshow](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/slideshow) - слайдшоу, JS (Vanilla.js) [demo](https://staskontrabas.github.io/slideshow/)
