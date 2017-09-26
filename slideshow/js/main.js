@@ -9,6 +9,19 @@ var Slideshow = function(){
     box: 0,
     go: true
   }
+  this.init = function(obj){
+    var self = this;
+    var obj = obj || {width: 600, height: 300, pics: ['pic1.png','pic2.png','pic3.png']};
+    if(window.addEventListener){ 
+      window.addEventListener( "load", function(){self.run(obj)}, false );
+    }
+    else if(window.attachEvent){ 
+      window.attachEvent( "onload", function(){self.run(obj)});
+    }
+    else if(window.onLoad){
+      window.onload = self.run(obj);
+    }
+  }
   this.run = function(obj){//console.log(('pics' in obj));
     ('pics' in obj) && this.setPics(obj.pics);
     ('width' in obj) && this.setWidth(obj.width);
@@ -253,13 +266,4 @@ var Templates = function(){
 }
 var templates = new Templates();
 
-if(window.addEventListener){ 
-  window.addEventListener( "load", function(){slideshow.run({width: 600, height: 300, pics: ['pic1.png','pic2.png','pic3.png']})}, false );
-}
-else if(window.attachEvent){ 
-  window.attachEvent( "onload", function(){slideshow.run({width: 600, height: 300, pics: ['pic1.png','pic2.png','pic3.png']})});
-}
-else if(window.onLoad){
-  window.onload = slideshow.run({width: 600, height: 300, pics: ['pic1.png','pic2.png','pic3.png']});
-}
-//document.body.onload = slideshow.run(['pic1.png','pic2.png','pic3.png']);
+slideshow.init({width: 600, height: 300, pics: ['pic1.png','pic2.png','pic3.png']});
