@@ -4,7 +4,7 @@ var Calculator = function(){
       {val: '7', action: 'print'},{val: '8', action: 'print'},{val: '9', action: 'print'},{val: '/', action: 'division'},{val: '\u2190', action: 'back'},
       {val: '4', action: 'print'},{val: '5', action: 'print'},{val: '6', action: 'print'},{val: '*', action: 'multiple'},{val: 'CE', action: 'lost'},
       {val: '1', action: 'print'},{val: '2', action: 'print'},{val: '3', action: 'print'},{val: '-', action: 'minus'},{val: 'C', action: 'wipe'},
-      {val: '0', action: 'print'},{val: 'Z', action: 'cancel'},{val: '\u00b1', action: 'sign'},{val: '+', action: 'plus'},{val: '=', action: 'calc'}
+      {val: '0', action: 'print'},{val: '.', action: 'dot'},{val: '\u00b1', action: 'sign'},{val: '+', action: 'plus'},{val: '=', action: 'calc'}
     ],
     state = {
       str: '',
@@ -37,7 +37,11 @@ var Calculator = function(){
   }
   
   this.getState = function(){
-    return state;
+    var st = {};
+    for(var i in state){
+      st[i] = state[i];
+    }
+    return st;
   }
   this.setState = function(obj){
     for(var i in obj){
@@ -83,6 +87,7 @@ var Action = function(){
     calculator.setState({stack: num, btn: 'num', num: num, error: false});
     this.render();
   }
+  
   this.setAct = function(act){
     var state = calculator.getState();
     if(state.error) return false;
@@ -124,6 +129,20 @@ var Action = function(){
     this.render();
   }
   
+  this.dot = function(){
+    var state = calculator.getState(),
+      stack = parseFloat(state.stack);
+    if(stack < 1 && stack > -1 && stack || state.stack.indexOf('.') != -1){
+      return false;
+    }
+    else{
+      calculator.setStore(state);
+      //if(state.str == ''){ state.str = '0'; state.num = '0';}
+      calculator.setState({stack: state.stack + '.', num: state.num + '.', inputnum: true});
+      this.render();
+    }
+  }
+  
   this.back = function(){
     var state = calculator.getState(),
       num  = state.stack,
@@ -142,13 +161,13 @@ var Action = function(){
   this.wipe = function(){
     var state = calculator.getState();
     calculator.setStore(state);
-    calculator.setState({str: '', stack: 0, inputnum: false, act: false, res: 0, btn: false, num: 0});
+    calculator.setState({str: '', stack: '0', inputnum: false, act: false, res: '0', btn: false, num: '0'});
     this.render();
   }
   this.lost = function(){
     var state = calculator.getState();
     calculator.setStore(state);
-    calculator.setState({stack: 0, num: 0});
+    calculator.setState({stack: '0', num: '0'});
     this.render();
   }
   this.sign = function(){
@@ -156,7 +175,7 @@ var Action = function(){
       num  = state.stack,
       str = state.str;
     calculator.setStore(state);
-    calculator.setState({stack: parseFloat(state.stack) * (-1)});
+    calculator.setState({stack: (parseFloat(state.stack) * (-1)).toString()});
     this.render();
   }
   
@@ -168,6 +187,9 @@ var Action = function(){
   this.calculate = function(){
     var state = calculator.getState(),
       res;
+    if(state.stack.indexOf('.') != -1 && state.stack.indexOf('.') == state.stack.length - 1){
+      state.stack += '0';
+    }
     switch(state.act){
       case 'plus': res = parseFloat(state.res) + parseFloat(state.stack); break;
       case 'minus': res = parseFloat(state.res) - parseFloat(state.stack); break;
@@ -182,10 +204,10 @@ var Action = function(){
     }
     calculator.setStore(state);
     if(state.btn == 'calc'){
-      calculator.setState({str: '', stack: res, inputnum: false, act: false, num: res});
+      calculator.setState({str: '', stack: res.toString(), inputnum: false, act: false, num: res.toString()});
     }
     else{
-      calculator.setState({stack: res, inputnum: false, act: false});
+      calculator.setState({stack: res.toString(), inputnum: false, act: false});
     }
     this.render();
   }
@@ -196,7 +218,8 @@ var Action = function(){
     if(!event) var event = window.event;
     if (event.keyCode) keycode = event.keyCode;
     else if(event.which) keycode = event.which;
-    keycode = keycode.toString();console.log(event);
+    keycode = keycode.toString();
+    console.log(keycode);
     switch(keycode){
       case '48': this.print(event.key); break;
       case '49': this.print(event.key); break;
@@ -208,16 +231,18 @@ var Action = function(){
       case '55': this.print(event.key); break;
       case '56': this.print(event.key); break;
       case '57': this.print(event.key); break;
-      case '122': this.cansel(); break;
-      case '47': this.division(); break;
-      case '42': this.multiple(); break;
-      case '45': this.minus(); break;
-      case '43': this.plus(); break;
+      case '111': this.division(); break;
+      case '191': this.division(); break;
+      case '106': this.multiple(); break;
+      case '109': this.minus(); break;
+      case '189': this.minus(); break;
+      case '107': this.plus(); break;
       case '8': this.back(); break;
-      case '61': this.calc(); break;
+      case '187': this.calc(); break;
       case '13': this.calc(); break;
-      case '46': this.wipe(); break;
-      case '27': this.cancel(); break;
+      case '67': this.wipe(); break;
+      case '27': this.wipe(); break;
+      case '46': this.lost(); break;
     }
     event.preventDefault();
   }
