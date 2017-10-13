@@ -4,4 +4,4 @@
 * [ibp-select](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/ibp-select) - калькулятор, подбирающий комплектующие для ИБП. Gulp, Pug, JavaScript, ООП, jQuery, Less
 * [spa.x.com-shop](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/spa.x.com-shop) - SPA. ReactJS, Redux [demo](https://staskontrabas.github.io/spa.x.com-shop/build)
 * [slideshow](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/slideshow) - слайдшоу, JS (Vanilla.js) [demo](https://staskontrabas.github.io/slideshow/)
-* [calculator_simple](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/calculator_simple) - простой математический калькулятор. JavaScript, ООП [demo](https://staskontrabas.github.io/calculator_simple/)
+<!--* [calculator_simple](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/calculator_simple) - простой математический калькулятор. JavaScript, ООП [demo](https://staskontrabas.github.io/calculator_simple/)-->
