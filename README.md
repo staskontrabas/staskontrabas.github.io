@@ -5,3 +5,4 @@
 * [spa.x.com-shop](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/spa.x.com-shop) - SPA. ReactJS, Redux [demo](https://staskontrabas.github.io/spa.x.com-shop/build)
 * [slideshow](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/slideshow) - слайдшоу, JS (Vanilla.js) [demo](https://staskontrabas.github.io/slideshow/)
 <!--* [calculator_simple](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/calculator_simple) - простой математический калькулятор. JavaScript, ООП [demo](https://staskontrabas.github.io/calculator_simple/)-->
+* [calculator-react](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/calculator-react) - простой арифметический калькулятор. JavaScript, React + Redux [demo](https://staskontrabas.github.io/calculator-react/build/)
