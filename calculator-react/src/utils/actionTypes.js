@@ -1,0 +1,10 @@
+export const INPUT_NUMBER = 'INPUT_NUMBER';
+export const PLUS = 'PLUS';
+export const MINUS = 'MINUS';
+export const MULTIPLE = 'MULTIPLE';
+export const DIVISION = 'DIVISION';
+export const OPERATION = 'OPERATION';
+export const BACK = 'BACK';
+export const CLEAR = 'CLEAR';
+export const WIPE = 'WIPE';
+export const EQUAL = 'EQUAL';
