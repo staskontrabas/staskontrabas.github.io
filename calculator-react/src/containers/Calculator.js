@@ -102,7 +102,7 @@ class Calculator extends Component {
         </div>
         <div className="btn">
           <div className="btn-table">
-             <div className="btn-cell">±</div>
+             <div className="btn-cell" onClick={actions.sign}>±</div>
           </div>
         </div>
         <div className="btn">

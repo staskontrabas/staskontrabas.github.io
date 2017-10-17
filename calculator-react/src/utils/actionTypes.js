@@ -8,3 +8,4 @@ export const BACK = 'BACK';
 export const CLEAR = 'CLEAR';
 export const WIPE = 'WIPE';
 export const EQUAL = 'EQUAL';
+export const SIGN = 'SIGN';

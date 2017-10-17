@@ -42,7 +42,7 @@ export const back = () => {
   return (dispatch, getState) => {
     const calc = getState().calculator;
     if(!calc.showingResult){
-      if(!calc.inputValue.length || calc.inputValue.length === 1){
+      if(!calc.inputValue.length || calc.inputValue.length === 1 || (calc.inputValue.length === 2 && calc.inputValue.indexOf('-') !== -1)){
         calc.inputValue = '0';
         calc.inputStart = false;
       }
@@ -150,6 +150,10 @@ export function multiple(){
     }
   }
 };
+
+export const sign = () => ({
+  type: actionTypes.SIGN
+});
 
 export const equal = () => {
   return (dispatch, getState) => {

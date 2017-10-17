@@ -48,6 +48,12 @@ const calculator = (state = initialAppState, action) => {
       ...state,
       ...initialAppState
     };
+  } else if (action.type === actionTypes.SIGN) {
+    return {
+      ...state,
+      inputValue: (parseFloat(state.inputValue) * (-1)).toString(),
+      resultValue: state.showingResult ? (parseFloat(state.resultValue) * (-1)).toString(): state.resultValue
+    };
   } else if (action.type === actionTypes.CLEAR) {
     return {
       ...state,
