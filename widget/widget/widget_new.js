@@ -1774,6 +1774,7 @@
         
         this.renderWCall = function(){
             this.init = function(){
+              document.body.innerHTML = '<div style="width:100%; height:100%;background-color:#ccc;color:#000;">test</div>';
                 var meta = document.querySelector('meta[name="viewport"]');              
                 if(!meta){
                     meta = document.createElement('meta');
