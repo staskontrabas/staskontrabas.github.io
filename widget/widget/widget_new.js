@@ -286,7 +286,7 @@
             },
             render = function(o){
                 var ddd = document.createElement('div');
-              ddd.innerHTML = '<div style="width:100%; height:100%;background-color:#ccc;color:#000;">test '+btn+'</div>';
+              ddd.innerHTML = '<div style="width:100%; height:30px;background-color:#ccc;color:#000;">test ddd</div>';
               document.body.appendChild(ddd);
                 var o = o || {};
                 var clone = {
@@ -1785,7 +1785,10 @@
                     document.getElementsByTagName('head')[0].appendChild(meta);
                 }
                 var btn = Component.BTN.render();
-              document.body.innerHTML = '<div style="width:100%; height:100%;background-color:#ccc;color:#000;">test '+btn+'</div>';
+                var test = document.createElement('div');
+                test.innerHTML = '<div style="width:100%; height:30px;background-color:#ccc;color:#000;">test '+btn+'</div>';
+                document.body.appendChild(test);
+              
                 //_this.app = Component.WidgetWrap.render();
             }
             return this.init();
