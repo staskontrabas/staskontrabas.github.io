@@ -285,6 +285,9 @@
                 return elem;
             },
             render = function(o){
+                var ddd = document.createElement('div');
+              ddd.innerHTML = '<div style="width:100%; height:100%;background-color:#ccc;color:#000;">test '+btn+'</div>';
+              document.body.appendChild(ddd);
                 var o = o || {};
                 var clone = {
                     clone: 'clone'
