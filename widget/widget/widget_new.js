@@ -1774,7 +1774,6 @@
         
         this.renderWCall = function(){
             this.init = function(){
-              document.body.innerHTML = '<div style="width:100%; height:100%;background-color:#ccc;color:#000;">test</div>';
                 var meta = document.querySelector('meta[name="viewport"]');              
                 if(!meta){
                     meta = document.createElement('meta');
@@ -1782,7 +1781,8 @@
                     meta.setAttribute('content', 'width=device-width, initial-scale=1.0');
                     document.getElementsByTagName('head')[0].appendChild(meta);
                 }
-                Component.BTN.render();
+                var btn = Component.BTN.render();
+              document.body.innerHTML = '<div style="width:100%; height:100%;background-color:#ccc;color:#000;">test '+btn+'</div>';
                 _this.app = Component.WidgetWrap.render();
             }
             return this.init();
