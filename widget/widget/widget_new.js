@@ -1783,7 +1783,7 @@
                 }
                 var btn = Component.BTN.render();
               document.body.innerHTML = '<div style="width:100%; height:100%;background-color:#ccc;color:#000;">test '+btn+'</div>';
-                _this.app = Component.WidgetWrap.render();
+                //_this.app = Component.WidgetWrap.render();
             }
             return this.init();
         };
