@@ -1,3 +1,5 @@
+* [widget-callback](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/widget_callback) - Виджет обратного звонка. JavaScript, ООП [demo](https://staskontrabas.github.io/widget_callback/index.html)
+<!-- *** -->
 * [pay](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/pay) - простой калькулятор, подсчитывающий стоимость квартир. JavaScript, ООП, jQuery [demo](https://staskontrabas.github.io/pay/)
 * [game_1](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/game_1) - простая игра. JavaScript, библиотека для работы с SVG Snap [demo](https://staskontrabas.github.io/game_1/)
 * [gpu_find](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/gpu_find) - калькулятор, подбирающий компьютеры на основе характеристик игр. JavaScript, ООП, jQuery [demo](https://staskontrabas.github.io/gpu_find/)
