@@ -261,9 +261,6 @@
             oTree = {},
             componentParent = false,
             render = function(o){
-                var ddd = document.createElement('div');
-              ddd.innerHTML = '<div style="width:100%; height:30px;background-color:#ccc;color:#000;">test ddd</div>';
-              document.body.appendChild(ddd);
                 var o = o || {};
                 if(o.hasOwnProperty('remove')){
                     if(o.remove){
