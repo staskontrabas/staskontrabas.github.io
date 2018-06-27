@@ -2464,8 +2464,7 @@
         load : function(){
             if(window.addEventListener){
                 window.addEventListener('load', function(){
-                    setTimeout(function(){wcall.init();}, 1000);
-                    //wcall.init();
+                    wcall.init();
                 }, false);
             }
             else if(window.attachEvent){
