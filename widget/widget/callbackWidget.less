@@ -35,6 +35,7 @@
         height: 100%;
         position: absolute;
         width: 100%;
+        pointer-events: none;
     }
     &_ripple {
         animation: spin 2s infinite linear forwards;
@@ -46,6 +47,7 @@
         top: 0;
         transition: background-color @duration*4;
         width: @size;
+        pointer-events: none;
         &:nth-last-of-type(2n) {
             animation-delay: 1s;
         }
