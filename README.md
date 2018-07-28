@@ -1,4 +1,5 @@
 * [widget](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/widget) - Виджет чата и обратного звонка. JavaScript, ООП [demo](https://staskontrabas.github.io/widget/index.html)
+* [widget-chat](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/widget-travel) - Чат. JavaScript, ООП [demo](https://staskontrabas.github.io/widget-travel/index.html)
 * [widget-callback](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/widget_callback) - Виджет обратного звонка. JavaScript, ООП [demo](https://staskontrabas.github.io/widget_callback/index.html)
 * [calculator-react](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/calculator-react) - простой арифметический калькулятор. JavaScript, React + Redux [demo](https://staskontrabas.github.io/calculator-react/build/)
 <!-- *** -->
