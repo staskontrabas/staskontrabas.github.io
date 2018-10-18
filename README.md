@@ -3,6 +3,7 @@
 * [widget-chat](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/widget-travel) - Чат. JavaScript, ООП [demo](https://staskontrabas.github.io/widget-travel/index.html)
 * [widget-callback](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/widget_callback) - Виджет обратного звонка. JavaScript, ООП [demo](https://staskontrabas.github.io/widget_callback/index.html)
 * [calculator-react](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/calculator-react) - простой арифметический калькулятор. JavaScript, React + Redux [demo](https://staskontrabas.github.io/calculator-react/build/)
+* [calculator-jquery](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/buket) - калькулятор цветочного магазина. JavaScript, jQuery [demo](https://staskontrabas.github.io/buket/)
 <!-- *** -->
 * [pay](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/pay) - простой калькулятор, подсчитывающий стоимость квартир. JavaScript, ООП, jQuery [demo](https://staskontrabas.github.io/pay/)
 * [game_1](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/game_1) - простая игра. JavaScript, библиотека для работы с SVG Snap [demo](https://staskontrabas.github.io/game_1/)
