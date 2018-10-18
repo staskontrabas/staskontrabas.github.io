@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <div style="width: 720px; margin: 0 auto; box-shadow: 0px 3px 4px -1px rgba(0,0,0,0.75); min-height: 200px;position:relative;" id="app">
+        <div class="selectors">
+            <div class="selectors__block" name="forma">
+                <div class="selectors__block-title">Форма</div>
+                <div class="selectors__block-row">
+                    <div class="selectors__block-item--btn">
+                        <input type="radio" name="former_btn" id="former_btn_0" value="0" data-params='{"title": "Круглый"}' checked />
+                        <label for="former_btn_0">Круглый</label>
+                    </div>
+                    <div class="selectors__block-item--btn">
+                        <input type="radio" name="former_btn" id="former_btn_1" value="1" data-params='{"title": "Каскадом"}'/>
+                        <label for="former_btn_1">Какадом</label>
+                    </div>
+                    <div class="selectors__block-item--btn">
+                        <input type="radio" name="former_btn" id="former_btn_2" value="2" data-params='{"title":"Россыпью"}'/>
+                        <label for="former_btn_2">Россыпью</label>
+                    </div>
+                </div>
+            </div>
+            <div class="selectors__block" name="flower">
+                <div class="selectors__block-title">Цветок</div>
+                <div class="selectors__block-row">
+                    <div class="selectors__block-item" data-params='{"id":"0","name":"flower", "title":"Цветок","price":"33","category":"flowers","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Цветок</div>
+                            <div class="selectors__block-item--color-list">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"1","name":"flower", "title":"Цветок","price":"33","category":"flowers","color_list":["#000000","#000000","#000000","#000000", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Цветок</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"2","name":"flower", "title":"Цветок","price":"33","category":"flowers","color_list":["#e95055"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Цветок</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"3","name":"flower", "title":"Цветок","price":"33","category":"flowers","color_list":["#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Цветок</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selectors__block-row">
+                    <div class="selectors__block-item" data-params='{"id":"4","name":"flower", "title":"Цветок","price":"33","category":"flowers","color_list":[]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Цветок</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"5","name":"flower", "title":"Цветок","price":"33","category":"flowers","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Цветок</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"6","name":"flower", "title":"Цветок","price":"33","category":"flowers","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Цветок</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"7","name":"flower", "title":"Цветок","price":"33","category":"flowers","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Цветок</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selectors__block" name="green">
+                <div class="selectors__block-title">Зелень</div>
+                <div class="selectors__block-row">
+                    <div class="selectors__block-item" data-params='{"id":"0","name":"green", "title":"Трава","price":"33","category":"greens","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Трава</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"1","name":"green", "title":"Трава","price":"33","category":"greens","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Трава</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"2","name":"green", "title":"Трава","price":"33","category":"greens","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Трава</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"3","name":"green", "title":"Трава","price":"33","category":"greens","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Трава</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selectors__block" name="more">
+                <div class="selectors__block-title">Дополнение</div>
+                <div class="selectors__block-row">
+                    <div class="selectors__block-item" data-params='{"id":"0","name":"basket", "title":"Корзина","price":"33","category":"mores","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Корзина</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"1","name":"basket", "title":"Корзина","price":"33","category":"mores","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Корзина</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"2","name":"basket", "title":"Корзина","price":"33","category":"mores","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Корзина</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"3","name":"basket", "title":"Корзина","price":"33","category":"mores","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Корзина</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selectors__block" name="tie">
+                <div class="selectors__block-title">Оформление</div>
+                <div class="selectors__block-row">
+                    <div class="selectors__block-item" data-params='{"id":"0","name":"tie", "title":"Лента","price":"33","category":"ties","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Лента</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"1","name":"tie", "title":"Лента","price":"33","category":"ties","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Лента</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"2","name":"tie", "title":"Лента","price":"33","category":"ties","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Лента</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                    <div class="selectors__block-item" data-params='{"id":"3","name":"tie", "title":"Лента","price":"33","category":"ties","color_list":["#e95055","#ffffff","#ff0000","#00ff00", "#0000ff","#f9ff00","#000000"]}'>
+                        <div class="selectors__block-item--wrap">
+                            <img src="images/flor.png" />
+                            <div class="selectors__block-item--title">Лента</div>
+                            <div class="selectors__block-item--color-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calculator">
+            <div class="calculator__wrap">
+                <div class="calculator__title">Ваш букет</div>
+                <div class="calculator__forma"></div>
+                <div class="calculator__stack">
+                </div>
+                <div class="calculator__total"><span name="total_price"></span> P</div>
+                <div class="calculator__row">
+                    <div class="calculator__submit-btn" id="calculator__submit-btn">Купить</div>
+                </div>
+                <div class="calculator__row">
+                    способ оплаты
+                </div>
+                <div class="calculator__row">
+                    <a href="" class="calculator__terms">Условия оплаты и доставки</a>
+                </div>
+                <div class="calculator__row">
+                    <div class="calculator__noty">Минимальная сумма заказа 700р</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
