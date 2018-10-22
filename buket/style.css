@@ -70,8 +70,8 @@
     height: fit-content;
 }
 .selectors__block-item:hover .selectors__block-item--wrap:before {
-    top: 29px;
-    left: 29px;
+    top: 25px;
+    left: 24px;
 }
 .selectors__block-item:hover .selectors__block-item--color-list {
     opacity: 1;
@@ -104,10 +104,10 @@
     border-radius: 50%;
     border: 3px solid #6fc114;
     position: absolute;
-    top: 19px;
-    left: 19px;
-    width: 70px;
-    height: 70px;
+    top: 15px;
+    left: 14px;
+    width: 79px;
+    height: 79px;
     z-index: 1;
     -webkit-transition: .2s ease-out;
     transition: .2s ease-out;
