@@ -1,0 +1,32 @@
+{
+  "name": "cove",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@riophae/vue-treeselect": "0.0.37",
+    "debounce": "^1.2.0",
+    "highcharts": "^6.2.0",
+    "v-tooltip": "^2.0.0-rc.33",
+    "vue": "^2.5.17",
+    "vue-i18n": "^8.0.0",
+    "vue-router": "^3.0.1",
+    "vue-slider-component": "^2.8.2",
+    "vue2-datepicker": "^2.4.2",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "highcharts-vue": "^1.2.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "vue-cli-plugin-i18n": "^0.5.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
