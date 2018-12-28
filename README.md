@@ -6,6 +6,7 @@
 * [calculator-react](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/calculator-react) - простой арифметический калькулятор. JavaScript, React + Redux [demo](https://staskontrabas.github.io/calculator-react/build/)
 * [calculator-jquery](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/buket) - калькулятор цветочного магазина. JavaScript, jQuery [demo](https://staskontrabas.github.io/buket/)
 <!-- *** -->
+* [controlls](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/controlls) - взаимодействие контроллов (полей ввода). JavaScript, Vue.js, Vuex. [demo](https://staskontrabas.github.io/controlls/dist/)
 * [pay](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/pay) - простой калькулятор, подсчитывающий стоимость квартир. JavaScript, ООП, jQuery [demo](https://staskontrabas.github.io/pay/)
 * [game_1](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/game_1) - простая игра. JavaScript, библиотека для работы с SVG Snap [demo](https://staskontrabas.github.io/game_1/)
 * [gpu_find](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/gpu_find) - калькулятор, подбирающий компьютеры на основе характеристик игр. JavaScript, ООП, jQuery [demo](https://staskontrabas.github.io/gpu_find/)
