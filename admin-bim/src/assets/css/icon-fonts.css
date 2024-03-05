@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'imoon-workfl';
+  src:  url('~@/assets/fonts/icomoon.eot?yr4uuk');
+  src:  url('~@/assets/fonts/icomoon.eot?yr4uuk#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/icomoon.ttf?yr4uuk') format('truetype'),
+    url('~@/assets/fonts/icomoon.woff?yr4uuk') format('woff'),
+    url('~@/assets/fonts/icomoon.svg?yr4uuk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="imw-"], [class*=" imw-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'imoon-workfl' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.imw-group:before {
+  content: "\e91f";
+}
+.imw-notification:before {
+  content: "\e90b";
+}
+.imw-3ds:before {
+  content: "\e90c";
+}
+.imw-bmp:before {
+  content: "\e90d";
+}
+.imw-csv:before {
+  content: "\e90e";
+}
+.imw-dae:before {
+  content: "\e90f";
+}
+.imw-doc:before {
+  content: "\e910";
+}
+.imw-dwg:before {
+  content: "\e911";
+}
+.imw-dxf:before {
+  content: "\e912";
+}
+.imw-iges:before {
+  content: "\e913";
+}
+.imw-mtl .path1:before {
+  content: "\e914";
+}
+.imw-mtl .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+}
+.imw-mtl .path3:before {
+  content: "\e916";
+  margin-left: -1em;
+}
+.imw-ply:before {
+  content: "\e917";
+}
+.imw-step:before {
+  content: "\e918";
+}
+.imw-stl:before {
+  content: "\e919";
+}
+.imw-stp:before {
+  content: "\e91a";
+}
+.imw-tiff:before {
+  content: "\e91b";
+}
+.imw-unknown:before {
+  content: "\e91c";
+}
+.imw-xls:before {
+  content: "\e91d";
+}
+.imw-zip:before {
+  content: "\e91e";
+}
+.imw-obj:before {
+  content: "\e90a";
+}
+.imw-grid:before {
+  content: "\e909";
+}
+.imw-axis:before {
+  content: "\e906";
+}
+.imw-camera:before {
+  content: "\e907";
+}
+.imw-download:before {
+  content: "\e908";
+}
+.imw-bell:before {
+  content: "\e900";
+}
+.imw-folder:before {
+  content: "\e901";
+}
+.imw-jpg:before {
+  content: "\e902";
+}
+.imw-pdf:before {
+  content: "\e903";
+}
+.imw-png:before {
+  content: "\e904";
+}
+.imw-upload:before {
+  content: "\e905";
+}

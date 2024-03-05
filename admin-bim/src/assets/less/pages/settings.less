@@ -1,0 +1,35 @@
+
+.m-list{
+    &--group{
+        margin-bottom: 40px;
+
+        &-title{
+            color: #2e2e2e;
+            font-size: 15px;
+            border-bottom: 1px solid #eaeaea;
+        }
+    }
+    &--item{
+        padding: 25px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover{
+            background-color: #f1fbff;
+        }
+        &:hover &-title{
+            color: #1967c0;
+        }
+
+        &-title{
+            color: #373737;
+            font-size: 16px;
+            transition: color 0.2s ease;
+        }
+        &-desc{
+            color: #373737;
+            font-size: 14px;
+        }
+    }
+}

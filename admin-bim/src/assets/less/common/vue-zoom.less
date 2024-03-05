@@ -1,0 +1,34 @@
+.vue-zoomer{
+    overflow:hidden;
+    transition:background-color .5s
+}
+.zoomer{
+    transform-origin:50% 50%;
+    width:100%;
+    height:100%
+}
+.zoomer>img{
+    vertical-align:top;
+    -webkit-user-drag:none
+}
+.vue-zoomer-gallery{
+    position:relative;
+    overflow:hidden;
+    user-select:none;
+    min-width:100px;
+    min-height:100px
+}
+.vue-zoomer-gallery>*{
+    display:inline-block
+}
+.vue-zoomer-gallery.anim .slide{
+    transition:left .4s
+}
+.slide{
+    position:absolute;
+    top:0;
+    object-fit:contain;
+    width:100%;
+    height:100%;
+    -webkit-user-drag:none
+}

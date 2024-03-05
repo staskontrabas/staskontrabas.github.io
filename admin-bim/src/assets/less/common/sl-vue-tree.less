@@ -1,0 +1,251 @@
+
+.he-tree{
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.tree-node{
+}
+.tree-node-inner{
+  padding: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.draggable-placeholder{
+}
+.draggable-placeholder-inner{
+  border: 1px dashed #0088F8;
+  box-sizing: border-box;
+  background: rgba(0, 136, 249, 0.09);
+  color: #0088f9;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.tree3{
+  .tree-node-inner{
+    border: none;
+    padding: 0px;
+  }
+  .tree-node-inner-back:hover{
+    background: #ddd;
+  }
+}
+
+.tree4{
+  .tree-node-inner{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+    backgroud: #ccc;
+  }
+  .draggable-placeholder-inner{
+    background-color: orangered;
+  }
+}
+
+@root: sl-vue-tree;
+
+.sl-vue-tree {
+    position: relative;
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+
+    &-root {
+        background-color: #fff;
+    }
+    &-root > &-nodes-list {
+       position: relative;
+       padding-bottom: 4px;
+
+       & > .sl-vue-tree-node:after{
+           content: '';
+           display: block;
+           position: relative;
+           left: 28px;
+           width: calc(100% - 56px);
+           height: 0;
+           border-bottom: 0//1px solid #c2c2c2;
+       }
+   }
+   &-title{
+       max-width: calc(100% - 45px);
+       display: contents;
+       &--name{
+            display: inline-block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            vertical-align: middle;
+            padding-left: 4px;
+            font-weight: 500;
+            font-family: "Artifakt Element", sans-serif;
+            font-size: 14px;
+            color: rgb(60, 60, 60);
+            -webkit-font-smoothing: antialiased;
+            &.level{
+                &-1{
+                    width: calc(100% - 45px);
+                    &.sl-group{
+                        border-bottom: 1px solid #c2c2c2;
+                    }
+                }
+                &-2{
+                    width: calc(100% - 69px);
+                    line-height: 28px;
+                }
+                &-3{
+                    width: calc(100% - 92px);
+                }
+            }
+       }
+   }
+
+    &-node{
+        &-item {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+
+            padding-left: 5px;
+            padding-right: 5px;
+            line-height: 22px;
+            border: 1px solid transparent;
+            height: 30px;
+
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(246, 246, 246);
+
+                .m-folder-btn {
+                    pointer-events: auto;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &-is-folder{
+            // color: #2c2c2c;
+            font-size: 14px;
+
+            & .level-2,& .level-1{
+                // color: #6e6e6e;
+                font-size: 14px;
+            }
+            &:hover .level-2, &:hover .level-1{
+                // color: #2c2c2c;
+                font-size: 14px;
+
+                &.leaf-icon .v-icon{
+                    // color: #2c2c2c;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &-is-leaf{
+            color: #6e6e6e;
+            font-size: 12px;
+
+            .leaf-icon {
+                //margin-right: 4px;
+
+                .v-icon{
+                    vertical-align: top;
+                }
+            }
+
+            &:hover{
+                color: #2c2c2c;
+
+                .leaf-icon .v-icon{
+                    color: #2c2c2c;
+                }
+            }
+        }
+    }
+
+    &-selected > &-node-item {
+        color: #4e94e9 !important;
+        &:hover *{
+            color: #4e94e9 !important;
+        }
+
+        .level-1, .level-2{
+            color: #4e94e9 !important;
+        }
+
+        .v-icon{
+            color: #4e94e9 !important;
+        }
+    }
+}
+
+
+.sl-vue-tree-node-item.sl-vue-tree-cursor-inside {
+    border: 1px solid rgba(78, 148, 233, 0.5);
+}
+
+.sl-vue-tree-gap {
+    display: none;
+    width: 21px;
+    min-height: 1px;
+
+}
+.level-gap {
+    width: 21px;
+    min-height: 1px;
+
+}
+
+.sl-vue-tree-toggle {
+    display: inline-block;
+    text-align: left;
+    width: 20px;
+
+    .expanded .v-icon{
+        transform: rotate(-180deg);
+    }
+    & > .v-icon{
+        vertical-align: top;
+    }
+}
+
+.sl-vue-tree-sidebar {
+    margin-left: auto;
+
+    &:hover .v-icon{
+        color: #2c2c2c;
+    }
+}
+
+.sl-vue-tree-cursor {
+    position: absolute;
+    border: 1px solid rgba(78, 148, 233, 0.5);
+    height: 1px;
+    width: 100%;
+}
+
+.sl-vue-tree-drag-info {
+    position: absolute;
+    background-color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(0,0,0, 0.3);
+    opacity: 0.8;
+    margin-left: 5px;
+    padding: 5px 5px;
+    font-size: 12px;
+    white-space: nowrap;
+
+    .v-icon {
+        vertical-align: top;
+    }
+    span{
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,315 @@
+.m-zoom{
+    position: relative;
+    margin: auto;
+    width: 100%;
+
+    img{
+        //width: 0;
+        //height: 0;
+        //transform-origin: 0 0;
+    }
+}
+.b-zoom{
+    position: absolute;
+    top: 0;
+    width: 42px;
+    height: 100%;
+    left: 0;
+    padding-top: 8px;
+    text-align: center;
+    background-color: #fff;
+    z-index: 10;
+}
+.pdf-move{
+    cursor: move;
+}
+
+.m-3d-wrap{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+
+    &.no-event{
+        pointer-events: none;
+    }
+}
+.m-pdf-wrap{
+    width: 100%;
+    height: 100%;
+    padding: 55px;
+    padding-top: 48px;
+    //padding-left: 50px;
+    overflow: hidden;
+    display: flex;
+
+    &.no-event{
+        pointer-events: none;
+    }
+}
+.m-anno{
+    &-conductor{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        &.novisible{
+            opacity: 0;
+        }
+    }
+    &-view{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        &--stack{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.3;
+            &.novisible{
+                opacity: 0;
+            }
+        }
+    }
+    &-draft{
+        position: absolute;
+        border: 4px solid #ffd830;
+        width: 13px;
+        height: 13px;
+        cursor: all-scroll;
+        transition: opacity 0.2s ease;
+
+        &.active{
+            background-color: rgba(255, 216, 48, 0.3);
+        }
+        &.hidden{
+            opacity: 0.6;
+        }
+    }
+    &-view &-draft{
+        opacity: 1;
+        transition: opacity 0.2s ease;
+
+        &.highligth{
+            opacity: 1 !important;
+        }
+        &.novisible{
+            opacity: 0;
+        }
+    }
+}
+.m-draft{
+    &-edge{
+        position: absolute;
+        //background-color: #ffd830;
+
+        &-0{
+            top: -5px;
+            left: 0px;
+            right: 0px;
+            height: 6px;
+            cursor: n-resize;
+        }
+        &-1{
+            bottom: 0px;
+            top: 0px;
+            right: -5px;
+            width: 6px;
+            cursor: e-resize;
+        }
+        &-2{
+            bottom: -5px;
+            left: 0px;
+            right: 0px;
+            height: 6px;
+            cursor: s-resize;
+        }
+        &-3{
+            bottom: 0px;
+            top: 0px;
+            left: -5px;
+            width: 6px;
+            cursor: w-resize;
+        }
+    }
+    &-handler{
+        border-color: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        background-clip: padding-box;
+        width: 20px;
+        height: 20px;
+        top: -11px;
+        left: -11px;
+        cursor: all-scroll;
+        background-color: #ffd830;
+        display: inline-flex;
+        align-items: center;
+        z-index: 1;
+    }
+    &-resizer{
+    	width: 10px;
+    	height: 10px;
+        position: absolute;
+        right: -4px;
+        bottom: -4px;
+        overflow: hidden;
+        cursor: nwse-resize;
+
+        &:before{
+            content: "";
+            width: 150%;
+            height: 150%;
+            position: absolute;
+            left: 35%;
+            top: 35%;
+            background: red;
+            transform: rotate(45deg);
+        }
+    }
+    &-handle{
+        border-color: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+        position: absolute;
+        background: #fff;
+        border-radius: 50%;
+        background-clip: padding-box;
+
+        &-0{
+            width: 18px;
+            height: 18px;
+            top: -11px;
+            left: -11px;
+            cursor: nw-resize;
+        }
+        &-1{
+            width: 18px;
+            height: 18px;
+            top: -11px;
+            right: -11px;
+            cursor: ne-resize;
+        }
+        &-2{
+            width: 18px;
+            height: 18px;
+            bottom: -11px;
+            right: -11px;
+            cursor: se-resize;
+        }
+        &-3{
+            width: 18px;
+            height: 18px;
+            bottom: -11px;
+            left: -11px;
+            cursor: sw-resize;
+        }
+    }
+}
+.pdf-container{
+    user-select: none;
+    pointer-events: none;
+
+    &--twice{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+    }
+    &--twice__wrap{
+        position: absolute;
+        overflow: hidden;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--desc{
+            font-size: 12px;
+            padding: 0 50px;
+        }
+    }
+}
+.dragger{
+    &--wrap{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 100%;
+        border-left: 1px solid #535353;
+        border-right: 1px solid #535353;
+        z-index: 8;
+    }
+    &--handler{
+        position: absolute;
+        left: -19px;
+        top: calc(50% - 19px);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #4e93e9;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+}
+.m-version-pdf{
+    position: absolute;
+    top: 10px;
+    width: 90px;
+    font-size: 16px;
+    z-index: 9;
+    & .v-list-item{
+        min-height: 20px;
+    }
+    &--left{
+        left: 45px;
+    }
+    &--right{
+        right: 45px;
+    }
+}
+
+
+.m-progress{
+    width: 30%;
+    height: 15px;
+    border: 2px solid #1867c0;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    margin-top: -8px;
+    box-sizing: content-box;
+
+    &-bar{
+        width: 0;
+        height: 100%;
+        background-color: #1867c0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width 0.2s ease;
+    }
+
+    &-value{
+        position: absolute;
+        left: 0;
+        top: -19px;
+        font-size: 12px;
+        color: #1867c0;
+    }
+}

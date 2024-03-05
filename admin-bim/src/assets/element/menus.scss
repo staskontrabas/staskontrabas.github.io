@@ -1,0 +1,38 @@
+@import "@/assets/scss/_variables.scss";
+
+$font-size: 14px;
+$font-weight: 500;
+$line-height: 1.5;
+
+.contextmenu {
+  .v-list {
+    padding: 0;
+  }
+  .v-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 8px 0px 8px; 
+    min-height: 36px !important;
+    height: 36px;
+  }
+  .v-list-item__title {
+    color: $black-default;
+    margin: 0px 8px;
+    font-size: $font-size !important;
+    font-weight: $font-weight !important;
+    line-height: $line-height !important;
+  }
+  .v-icon  {
+    color: $black-default;
+  }
+}
+
+.el-dropdown-menu {
+    padding: 0 0;
+    margin: 0 0;
+    & .v-list {
+        border-radius: 5px;
+    }
+}
+

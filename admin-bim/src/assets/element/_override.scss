@@ -1,0 +1,1046 @@
+@import "@/assets/scss/_variables.scss";
+
+// general text
+.artifakt-text {
+  font-family: "Artifakt Element", sans-serif;
+}
+
+// el-tabs -- вкладки в настройках
+
+.el-tabs--top {
+    height: calc(100%);
+}
+
+.el-tabs__item {
+  font-size: 14px;
+  &.is-active {
+    color: black !important;
+    font-weight: 700;
+  }
+}
+
+.el-tabs__content {
+    height: calc(100% - 40px); // почему? Элемент наследуется от 
+}
+
+.el-tab-pane {
+  height: 100%;
+}
+
+.el-tabs__header {
+  padding: 0px 16px;
+  margin-bottom: 0;
+}
+
+
+// изменения в стиль input, использующийся в el-item
+.el-form-item__label { 
+    padding: 0 !important;
+    display: flex;
+    color: rgb(102, 102, 102);
+    margin-bottom: 8px;
+    font-family: "Artifakt Element", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.el-form-item__content {
+  line-height: 24px;
+}
+
+// el-select и внутренние элементы, dropdown etc. 
+.el-select {
+  width:100% !important; 
+}
+
+.el-select-dropdown.el-popper {
+  height: fit-content;
+  max-height: 300px;
+}
+
+.el-select-dropdown__wrap {
+  max-height: unset;
+}
+
+.el-select-dropdown.el-popper .el-select-dropdown__list {
+  height: 100%;
+}
+
+// стили селекторов в AppBar
+
+.data-wrapper {
+  & .tabs-select {
+    width: 225px !important;
+    min-width: 225px;
+    padding-right: 12px;
+    padding-left: 4px;
+    & > .el-input {
+        cursor: pointer;
+    }
+  }
+  & .el-input__prefix {
+    display: flex;
+    align-items: center;
+  }
+  & .el-select-dropdown__list {
+    height: 100px !important;
+    max-height: 100px !important;
+  }
+  & .el-input__inner {
+    border: 0 !important;
+  }
+  & .tab-option-text {
+    max-width:60%; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    color: rgb(60,60,60);
+  }
+  & .triangle {
+    fill: rgb(60,60,60);
+    transition: all 0.4s;
+  }
+  & .el-input.is-focus .triangle {
+    transform: rotate(180deg) !important;
+    transition: all 0.4s;
+  }
+
+  & .el-input__suffix-inner .el-icon-arrow-up { 
+    max-width: 0 !important;
+    &::before { 
+      content: '';
+      max-width: 0 !important;
+    }
+  }
+
+
+
+}
+
+// Наследуется от body, не от data-wrapper; поэтому придется назначать имена отдельно
+.tab-option-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  &:not(.display) > span {
+    color: rgb(60,60,60); 
+    font-weight: normal;
+  }
+  &.display {
+    justify-content: space-between;
+    min-width: 200px;
+    max-width: 200px;
+    > div:first-of-type {
+        min-height: 32px; 
+        min-width: 32px; 
+        max-height: 32px;
+        max-width: 32px;
+        background-color: #d3e9f5; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        border-radius: 5px;
+    }
+  }
+  > span {
+    color: rgb(60,60,60); 
+    font-weight: normal;
+  }
+  & .prefix-icon {
+    margin: -4px;
+    fill: rgb(6, 150, 215) !important;
+  }
+}
+
+.project-filter {
+  margin: 8px 0px 16px 0px;
+  & .el-input__inner {
+    border: 1px solid rgb(187, 187, 187);
+    transition: box-shadow 200ms cubic-bezier(0.2, 0, 0.2, 1) 0ms, border-color 200ms cubic-bezier(0.2, 0, 0.2, 1) 0ms;
+    &:hover {
+      box-shadow: rgba(128, 128, 128, 0.15) 0px 0px 0px 2px;
+    }
+    &:active {
+      box-shadow: rgba(128, 128, 128, 0.25) 0px 0px 0px 4px;
+      border-color: rgb(153, 153, 153);
+      transition: box-shadow 200ms cubic-bezier(0.2, 0, 0.2, 1) 0ms, border-color 200ms cubic-bezier(0.2, 0, 0.2, 1) 0ms;
+    }
+    &:focus:not(:active) {
+      border-color: rgb(6, 150, 215);
+      box-shadow: rgb(130, 190, 215) 0px 0px 0px 2px;
+    }
+  }
+}
+
+.triangle-wrapper {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 20px; 
+    min-width: 20px; 
+    max-height: 20px; 
+    max-width: 20px;
+}
+
+.project-filter-found  {
+  line-height: 16px !important; 
+  font-size: 12px !important; 
+  color: rgb(128, 128, 128) !important;
+}
+
+.project-filter-title {
+  margin: 5px 0px; 
+  color: rgb(102, 102, 102); 
+  line-height: 20px; 
+  font-size: 14px;
+}
+
+.project-option-wrapper {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  &:not(.display) {
+    > span {
+      color: rgb(60,60,60); font-weight: normal;
+    }
+  }
+  &.display {
+    width: 100%;
+    cursor: pointer;
+  }
+  > span {
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+    color: rgb(60,60,60);
+  }
+}
+
+.project-filter-options {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 16px;
+}
+
+.project-select {
+  max-width: 300px;
+  & .el-input__prefix {
+    min-width: 300px;
+    max-width: 300px;
+  }
+}
+
+.project-select-footer {
+  display: flex;
+  align-items: center;
+  padding: 0 16px ;
+  height: 50px;
+  > span {
+    margin: 5px 0px; 
+    color: rgb(102, 102, 102); 
+    line-height: 20px; 
+    font-size: 14px;
+  }
+  &:hover span {
+    text-decoration: underline;
+    color:rgb(6, 150, 215);
+    cursor: pointer;
+  }
+}
+
+.project-filter-body {
+  max-height: 150px;
+  overflow-y: overlay;
+  & .el-select-dropdown__item {
+    display: flex;
+    align-items: center;
+    padding: 8px 8px;
+    min-height: 70px;
+    & .project-option-wrapper {
+      display: flex;
+      align-items: center;
+      min-height: 100%;
+      min-width: 100%;
+      padding: 0 12px;
+      &.current {
+        background-color: $primary;
+        & > span {
+          color: $white;
+        }
+      }
+    }
+  }
+  // &::-webkit-scrollbar {
+  //   display: none;
+  //   transition: all 0.3s;
+  // }
+  &::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+    scrollbar-gutter: unset;
+  }
+  &::-webkit-scrollbar-thumb {
+      height: 35%;
+      background: rgb(60,60,60);
+      -webkit-border-radius: 1ex;
+      // -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+  }
+  // &::-webkit-scrollbar-corner {
+  //     background: #000;
+  // }
+}
+
+.no-hit {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  & .no-hit-box {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.project-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    margin: 32px 0px 16px 0px;
+}
+
+.project-title {
+    font-family: "Artifakt Element", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+    color: #3c3c3c;
+    padding-left: 16px;
+}
+
+.beta-plack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 55px;
+    margin: 0 8px;
+    background-color: #F7DBAB;
+    & span {
+        font-size: 14px;
+        font-family: "Artifakt Element", sans-serif;
+        text-transform: uppercase;
+        color:rgb(102, 102, 102);
+    }
+}
+
+
+
+//// SidebarFolders Tree
+
+.el-tree-node.is-current > .el-tree-node__content  {
+    background-color: #f6f6f6 !important; 
+    & div {
+        color:rgb(6, 150, 215) !important;
+    }
+}
+
+.el-tree-node {
+    font-weight: 500;
+    font-family: "Artifakt Element", sans-serif;
+    font-size: 14px;
+    color: rgb(60, 60, 60);
+    -webkit-font-smoothing: antialiased;
+}
+
+.el-tree-node__content {
+    border-left: 2px transparent solid;
+    &:hover {
+        background-color: #f6f6f6 !important; 
+    }
+}
+
+.el-tree-node.is-current {
+    & > .el-tree-node__content:first-child {
+        border-left: 2px #3c3c3c solid; // 
+    }
+}
+
+.el-tree--highlight-current.el-tree-node.is-current  {
+    & > .el-tree-node__content {
+        background-color: #f6f6f6 !important;
+    }
+    
+}
+
+.el-tree-node__expand-icon {
+    &.el-icon-caret-right:not(.is-leaf) {
+        &::before {
+            // галка вниз // для изменения цвета svg в url заменить fill - почему-то работает только rgb()-кодировка
+            display: block;
+            // transform: translateY(1px);
+            width: 14px;
+            height: 14px;
+            content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="6.11822 9.12392 11.96 7.046"><path d="M12,16.17a.74.74,0,0,1-.54-.23L6.23,10.52a.75.75,0,0,1,1.08-1L12,14.34l4.69-4.86a.75.75,0,1,1,1.08,1l-5.23,5.42A.74.74,0,0,1,12,16.17Z" fill="rgb(60,60,60)"/></svg>');
+        }
+    }
+    &.el-icon-caret-right.expanded:not(.is-leaf){
+        &::before {
+            // галка вправо (это галка вверх, которую встроенный класс компонента поворачивает на 90deg)
+            display: block;
+            transform: translateX(1px);
+            transition: all 0s;
+            width: 14px;
+            height: 14px;
+            //
+            content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="2 0.1 12 7"><path d="M8 .1334a.74.74 180 01.54.23L13.77 5.7834a.75.75 180 01-1.08 1L8 1.9634l-4.69 4.86a.75.75 180 11-1.08-1l5.23-5.42A.74.74 180 018 .1334Z" fill="rgb(60,60,60)"/></svg>');
+        }
+    }
+    &.el-icon-caret-right::before {
+        //:not(.is-leaf)
+        display: block;
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.el-tree-node__content {
+    min-height: 35px;
+}
+
+.eltree-node-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:4px; 
+    max-width: calc(100% - 26px); // 26px - size of folder icon in node
+    min-width: calc(100% - 26px); 
+    position: relative;
+}
+
+.eltree-node-textarea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #3c3c3c; 
+    gap: 4px; 
+    max-width: calc(100%); 
+    width: 100%;
+}
+
+.eltree-node-span {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    min-width: none; 
+    max-width: 60%;
+}
+
+.eltree-menu-wrapper {
+    padding-right: 4px; 
+    position: absolute; 
+    right: 0;
+}
+
+// el-tooltip для node
+.el-tooltip__popper {
+    font-size: 14px;
+    font-family: "Artifakt Element", sans-serif;
+    max-width: 300px;
+}
+
+
+// Для новой таблицы
+
+.ub-table {
+    .el-checkbox {
+        .el-checkbox__label {
+            display: none;
+            max-width: 0;
+        }
+    }
+}
+
+.svg-24 {
+    min-height: 24px !important; 
+    min-width: 24px !important; 
+    max-height: 24px !important; 
+    max-width: 24px !important;
+}
+
+.m-table--name {
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+    min-width: 0;
+}
+
+
+// Problems
+
+.create-problem-form {
+    & .el-input__prefix {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 5px - 35px);
+    }
+    & textarea.el-textarea__inner {
+        resize: none;
+    }
+
+    & .problem-category-selector-display {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        gap: 8px;
+        width: 100%;
+        background-color: $white;
+        white-space: nowrap;
+        color: $default;
+        padding-left: 12px;
+        cursor: pointer;
+        & span {
+            display: inline-flex; 
+            align-items: center;
+        }
+    }
+    & .el-date-editor {
+        width: 100%;
+    }
+    & .el-input__suffix-inner .el-icon-arrow-up {
+        color: rgb(60,60,60);
+        font-size: 18px;
+    }
+}
+
+//наследуется от body
+.problem-category-selector-type {
+    --common-width: 552px;
+    min-width: var(--common-width) !important;
+    max-width: var(--common-width) !important;
+    max-height: 300px !important;
+    overflow-y: scroll;
+    & .el-select-dropdown__list {
+        padding: 0;
+    }
+    & i {
+        font-size: 20px;
+        color: rgb(6, 150, 215);
+    }
+    & .el-select-dropdown__item {
+        & div.problem-category-selector-option {
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: space-between;
+        }
+        &.selected {
+            background-color: #ecf5fd;
+            color: #333333;
+            &:hover {
+                background-color: #f6f6f6;
+            }
+        }
+    }
+    & .problem-category-selector-header {
+        min-height: 40px; 
+        display: flex; 
+        align-items: center; 
+        font-family: "Artifakt Element", sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 8px 16px;
+        justify-content: space-between; 
+        background-color: #f6f6f6;
+    }
+}
+
+.problem-dialog-card-title {
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-family: "Artifakt Element", sans-serif;
+    position: relative;
+    top: 0;
+    z-index: 20;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: rgb(60, 60, 60);
+    min-height: 70px;
+    max-height: 70px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    background-color: $white;
+    padding: 20px 24px;
+}
+
+.problems-form-row-wrap {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    align-items: center;
+ }
+
+// боковой шкаф для редактирования проблем
+
+.edit-problem-selector-status {
+    max-height: 300px !important;
+    overflow-y: scroll;
+}
+
+.edit-problem-selector-type {
+    max-height: 300px !important;
+    overflow-y: scroll;
+    & .el-select-dropdown__list {
+        padding: 0;
+    }
+    & i {
+        font-size: 20px;
+        color: rgb(6, 150, 215);
+    }
+    & .el-select-dropdown__item {
+        padding: 8px 16px;
+        & div.problem-category-selector-option {
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: nowrap;
+            align-items: center; 
+            justify-content: space-between;
+            font-family: "Artifakt Element", sans-serif;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &.selected {
+            background-color: #ecf5fd;
+            color: #333333;
+            &:hover {
+                background-color: #f6f6f6;
+            }
+        }
+    }
+    & .problem-category-selector-header {
+        min-height: 40px; 
+        display: flex; 
+        align-items: center; 
+        padding: 0 12px; 
+        justify-content: space-between; 
+        background-color: #f6f6f6;
+    }
+}
+
+.status-selector-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center; 
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgb(102, 102, 102);
+}
+
+// v-dialog && оверлей
+
+.v-overlay__scrim {
+    background: rgba(12, 44, 84, 0.45) !important;
+}
+
+.v-dialog {
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px 0px;
+
+    &.issue-create-dialog {
+        overflow-y: hidden;
+        max-height: 70vh;
+    }
+}
+
+.edit-problem-form {
+    & .problem-category-selector-display {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 320px;
+        gap: 8px;
+        background-color: $white;
+        white-space: nowrap;
+        color: $default;
+        padding-left: 12px;
+        cursor: pointer;
+        & span.composite {
+            display: inline-block; 
+            align-items: center;
+            max-width: calc(100% - 24px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+.input-wrapper {
+    & .v-text-field {
+        padding-top: 0px;
+    }
+}
+
+
+/////////////////// ubIssuesForm section ///////////////////
+
+.issues--outer-wrap {
+    font-family: "Artifakt Element", sans-serif;
+    & .el-input.is-disabled {
+        & .display {
+            background-color: #f6f6f6;
+        }
+    }
+    & .el-input__prefix {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 5px - 35px);
+    }
+    & textarea.el-textarea__inner {
+        resize: none;
+    }
+    & .el-date-editor {
+        width: 100%;
+        & .el-input__prefix {
+            width: unset;
+        }
+    }
+    & .el-input__suffix-inner .el-icon-arrow-up {
+        color: rgb(60,60,60);
+        font-size: 18px;
+    }
+    & .display {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        gap: 8px;
+        padding-left: 12px;
+        background-color: $white;
+        color: $default;
+        cursor: pointer;
+        & span {
+            display: inline-flex; 
+            align-items: center;
+        }
+    }
+    
+}
+
+
+.issue-selector-status, .issue-selector-observers,
+.issue-selector-type, .issue-selector-reason,
+.issue-selector-user, .issue-selector-observers,
+.ub-issue-form-popper {
+    font-family: "Artifakt Element", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    max-height: 300px !important;
+    overflow-y: auto;
+    & .role-selector {
+        & .el-input__inner {
+            min-height: 40px !important;
+        }
+    }
+    &.access-selector {
+        &.roles-selector {
+            & .el-select-dropdown__item {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                min-height: 80px;
+            }
+        }
+        & .el-select-dropdown__item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            min-height: 60px;
+        }
+    }
+    &.el-select-dropdown.el-popper {
+        width: unset !important;
+    }
+    & .el-select-dropdown__list {
+        padding: 0;
+    }
+    & .el-select-dropdown__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0;
+        min-height: 40px;
+    }
+    &.entities {
+        & .el-select-dropdown__item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 0;
+            min-height: 60px;
+        }
+    }
+    &.header {
+        min-height: 40px; 
+        display: flex; 
+        align-items: center; 
+        padding: 8px 16px; 
+        justify-content: space-between; 
+        background-color: #f6f6f6;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    &.option {
+        display: flex;
+        gap: 8px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding: 8px 16px;
+        
+        & i {
+            font-size: 20px;
+            color: rgb(6, 150, 215);
+        }
+        &.issue-selector-type {
+            justify-content: space-between;
+            font-weight: 600;
+        }
+        &.issue-selector-reason {
+            justify-content: space-between;
+            font-weight: 600;
+
+        }
+        &.issue-selector-user {
+            justify-content: space-between;
+        }
+        &.ub-issue-form-popper {
+            justify-content: space-between;
+        }
+        &.active-status {
+            justify-content: start;
+        }
+    }
+    & .selected { // currently selected option
+        background-color: #ecf5fd;
+        color: #333333;
+        &:hover {
+            background-color: #f6f6f6;
+        }
+    }
+    
+}
+
+.issue-selector-observers {
+    & .el-select-dropdown__item.selected::after {
+        content: '' !important; // отключает стандартную галочку
+    }
+}
+
+
+/////////////////// coordination-space settings page ///////////////////
+
+.cd-tree-selector {
+    & .el-tree-node__expand-icon {
+        transition: none;
+        &.el-icon-caret-right:not(.is-leaf) {
+            &::before {
+                // галка вниз // для изменения цвета svg в url заменить fill - почему-то работает только rgb()-кодировка
+                display: block;
+                // transform: translateY(1px);
+                transition: none;
+                width: 14px;
+                height: 14px;
+                content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="6.11822 9.12392 11.96 7.046"><path d="M12,16.17a.74.74,0,0,1-.54-.23L6.23,10.52a.75.75,0,0,1,1.08-1L12,14.34l4.69-4.86a.75.75,0,1,1,1.08,1l-5.23,5.42A.74.74,0,0,1,12,16.17Z" fill="rgb(60,60,60)"/></svg>');
+                // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 13.1l-8-8 2.1-2.2 5.9 5.9 5.9-5.9 2.1 2.2z'/%3E%3C/svg%3E") !important;
+            }
+        }
+        &.el-icon-caret-right.expanded:not(.is-leaf){
+            &::before {
+                // галка вправо (это галка вверх, которую встроенный класс компонента поворачивает на 90deg)
+                display: block;
+                transform: translateX(1px);
+                transition: none;
+                width: 14px;
+                height: 14px;
+                content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="2 0.1 12 7"><path d="M8 .1334a.74.74 180 01.54.23L13.77 5.7834a.75.75 180 01-1.08 1L8 1.9634l-4.69 4.86a.75.75 180 11-1.08-1l5.23-5.42A.74.74 180 018 .1334Z" fill="rgb(60,60,60)"/></svg>');
+                // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 13.1l-8-8 2.1-2.2 5.9 5.9 5.9-5.9 2.1 2.2z'/%3E%3C/svg%3E") !important;
+                //
+            }
+        }
+        &.el-icon-caret-right::before {
+            //:not(.is-leaf)
+            display: block;
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+
+
+/////////////////// имитация чекбокса element-ui ///////////////////
+
+.false-checkbox {
+    --checkbox-side: 14px;
+    min-height: var(--checkbox-side);
+    max-height: var(--checkbox-side);
+    min-width: var(--checkbox-side);
+    max-width: var(--checkbox-side);
+    border: 1px solid rgb(102, 102, 102);
+    margin-right: 8px;
+    border-radius: 2px;
+    &:hover {
+        border: 1px solid rgb(6, 150, 215);
+    }
+}
+
+.false-checkbox-checked {
+    background-color: rgb(6, 150, 215);
+    border: 1px solid rgb(6, 150, 215);
+    position: relative;
+    &::after {
+        box-sizing: content-box;
+        content: "";
+        border: 1px solid #fff;
+        border-top-color: rgb(255, 255, 255);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-left-color: rgb(255, 255, 255);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-left: 0;
+        border-top: 0;
+        height: 7px;
+        left: 4px;
+        position: absolute;
+        top: 1px;
+        transform: rotate(45deg) scaleY(1);
+        width: 3px;
+        transition: transform .15s ease-in .05s;
+        transform-origin: center;
+    }
+}
+
+/////////////////// Плашки для проблем (issues) ///////////////////
+
+
+.problems-status-plate {
+    --border-raduis: 3px;
+    height: 18px;
+    border-top-left-radius: var(--border-raduis);
+    border-top-right-radius: var(--border-raduis);
+    border-bottom-right-radius: var(--border-raduis);
+    border-bottom-left-radius: var(--border-raduis);
+    max-width: 6px;
+    min-width: 6px;
+}
+
+.problem-category-mark-24 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --radius: 24px;
+    min-width: var(--radius);
+    max-width: var(--radius);
+    min-height: var(--radius);
+    max-height: var(--radius);
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.problem-category-mark-28 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --radius: 28px;
+    min-width: var(--radius);
+    max-width: var(--radius);
+    min-height: var(--radius);
+    max-height: var(--radius);
+    border-radius: 50%;
+}
+
+.issue--status-plate {
+    --border-raduis: 3px;
+    height: 18px;
+    border-top-left-radius: var(--border-raduis);
+    border-top-right-radius: var(--border-raduis);
+    border-bottom-right-radius: var(--border-raduis);
+    border-bottom-left-radius: var(--border-raduis);
+    max-width: 6px;
+    min-width: 6px;
+}
+
+
+/////////////////// Плашки для версий в таблице (versions) ///////////////////
+
+.ub-version-plaque {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    margin: 0;
+    min-height: 18px;
+    max-height: 18px;
+    min-width: fit-content;
+    max-width: fit-content;
+
+    font-family: "Artifakt Element", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+
+    border-radius: 18px; 
+    border: 1px solid #666666;
+    color: rgb(0, 110, 175); 
+    cursor: pointer;
+}
+
+.ub-version-dashes {
+   width: 100%; 
+   padding-left: 10px; 
+   display: flex; 
+   flex-direction: row; 
+   justify-content: start;
+}
+
+/////////////////// Декорации для текста ///////////////////
+
+.link-like-text {
+    color: #006eaf;
+    cursor: pointer;
+    // &:hover {
+    //     text-decoration: underline;
+    // }
+}
+
+.truncate-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

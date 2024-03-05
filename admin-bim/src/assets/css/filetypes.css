@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'filetypes';
+  src:  url('~@/assets/fonts/filetypes.eot?kp6fcz');
+  src:  url('~@/assets/fonts/filetypes.eot?kp6fcz#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/filetypes.ttf?kp6fcz') format('truetype'),
+    url('~@/assets/fonts/filetypes.woff?kp6fcz') format('woff'),
+    url('~@/assets/fonts/filetypes.svg?kp6fcz#filetypes') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ft-"], [class*=" ft-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'filetypes' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ft-docx:before {
+  content: "\e916";
+}
+.ft-consolidations:before {
+  content: "\e915";
+}
+.ft-ifcxml:before {
+  content: "\e914";
+}
+.ft-3ds:before {
+  content: "\e900";
+}
+.ft-bmp:before {
+  content: "\e901";
+}
+.ft-csv:before {
+  content: "\e902";
+}
+.ft-dae:before {
+  content: "\e903";
+}
+.ft-doc:before {
+  content: "\e904";
+}
+.ft-dwg:before {
+  content: "\e905";
+}
+.ft-dxf:before {
+  content: "\e906";
+}
+.ft-ifc:before {
+  content: "\e907";
+}
+.ft-iges:before {
+  content: "\e908";
+}
+.ft-jpg:before {
+  content: "\e909";
+}
+.ft-pdf:before {
+  content: "\e90a";
+}
+.ft-png:before {
+  content: "\e90b";
+}
+.ft-rvt:before {
+  content: "\e90c";
+}
+.ft-step:before {
+  content: "\e90d";
+}
+.ft-stl:before {
+  content: "\e90e";
+}
+.ft-stp:before {
+  content: "\e90f";
+}
+.ft-tiff:before {
+  content: "\e910";
+}
+.ft-unknown:before {
+  content: "\e911";
+}
+.ft-xls:before {
+  content: "\e912";
+}
+.ft-zip:before {
+  content: "\e913";
+}

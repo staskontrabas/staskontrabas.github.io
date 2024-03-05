@@ -1,0 +1,247 @@
+@font-face {
+  font-family: '3d';
+  src:  url('~@/assets/fonts/3d.eot?hvmymk');
+  src:  url('~@/assets/fonts/3d.eot?hvmymk#iefix') format('embedded-opentype'),
+    url('~@/assets/fonts/3d.ttf?hvmymk') format('truetype'),
+    url('~@/assets/fonts/3d.woff?hvmymk') format('woff'),
+    url('~@/assets/fonts/3d.svg?hvmymk#3d') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="trd-"], [class*=" trd-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '3d' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.trd-2d:before {
+  content: "\e947";
+  color: #fff;
+}
+.trd-axis_x:before {
+  content: "\e942";
+}
+.trd-axis_y:before {
+  content: "\e943";
+}
+.trd-axis_z:before {
+  content: "\e944";
+}
+.trd-plane:before {
+  content: "\e946";
+}
+.trd-D_section:before {
+  content: "\e941";
+}
+.trd-section1:before {
+  content: "\e945";
+}
+.trd-building:before {
+  content: "\e940";
+}
+.trd-back:before {
+  content: "\e91e";
+}
+.trd-front:before {
+  content: "\e91f";
+}
+.trd-left:before {
+  content: "\e920";
+}
+.trd-right:before {
+  content: "\e921";
+}
+.trd-top:before {
+  content: "\e93f";
+}
+.trd-books_delete:before {
+  content: "\e91d";
+}
+.trd-books:before {
+  content: "\e90f";
+}
+.trd-search:before {
+  content: "\e93e";
+}
+.trd-repeat-line:before {
+  content: "\e93d";
+}
+.trd-construct:before {
+  content: "\e93c";
+}
+.trd-play:before {
+  content: "\e93a";
+}
+.trd-play-track-next:before {
+  content: "\e93b";
+}
+.trd-calendar-range:before {
+  content: "\e938";
+}
+.trd-time:before {
+  content: "\e939";
+}
+.trd-list-work:before {
+  content: "\e936";
+}
+.trd-source:before {
+  content: "\e937";
+}
+.trd-info-1:before {
+  content: "\e935";
+}
+.trd-ticket:before {
+  content: "\e934";
+}
+.trd-table:before {
+  content: "\e933";
+}
+.trd-pen:before {
+  content: "\e932";
+}
+.trd-tree:before {
+  content: "\e931";
+}
+.trd-cube_hide:before {
+  content: "\e92f";
+}
+.trd-cube_show:before {
+  content: "\e930";
+}
+.trd-cube:before {
+  content: "\e92e";
+}
+.trd-checked:before {
+  content: "\e90d";
+}
+.trd-checked-ok:before {
+  content: "\e90e";
+}
+.trd-collision-settings:before {
+  content: "\e910";
+}
+.trd-edit:before {
+  content: "\e911";
+}
+.trd-group:before {
+  content: "\e912";
+}
+.trd-group-add:before {
+  content: "\e913";
+}
+.trd-group-delete:before {
+  content: "\e914";
+}
+.trd-report:before {
+  content: "\e929";
+}
+.trd-rules:before {
+  content: "\e92a";
+}
+.trd-rules-add:before {
+  content: "\e92b";
+}
+.trd-rules-delete:before {
+  content: "\e92c";
+}
+.trd-template:before {
+  content: "\e92d";
+}
+.trd-zone:before {
+  content: "\e90c";
+}
+.trd-surface1:before {
+  content: "\e90b";
+}
+.trd-info:before {
+  content: "\e907";
+}
+.trd-trash:before {
+  content: "\e909";
+}
+.trd-xml:before {
+  content: "\e90a";
+}
+.trd-external-link:before {
+  content: "\e908";
+}
+.trd-version1:before {
+  content: "\e906";
+}
+.trd-version:before {
+  content: "\e905";
+}
+.trd-visibility:before {
+  content: "\e90f";
+}
+.trd-compare:before {
+  content: "\e903";
+}
+.trd-printer:before {
+  content: "\e904";
+}
+.trd-conect:before {
+  content: "\e902";
+}
+.trd-street-view:before {
+  content: "\e901";
+}
+.trd-P87:before {
+  content: "\e900";
+}
+.trd-axo:before {
+  content: "\e91c";
+}
+.trd-texture:before {
+  content: "\e916";
+}
+.trd-fullscreen:before {
+  content: "\e917";
+}
+.trd-grid:before {
+  content: "\e918";
+}
+.trd-d-2:before {
+  content: "\e928";
+}
+.trd-d_view:before {
+  content: "\e927";
+}
+.trd-alert:before {
+  content: "\e926";
+}
+.trd-axis:before {
+  content: "\e925";
+}
+.trd-color_grid:before {
+  content: "\e924";
+}
+.trd-color_scene:before {
+  content: "\e923";
+}
+.trd-download:before {
+  content: "\e922";
+}
+.trd-propriety:before {
+  content: "\e91b";
+}
+.trd-screenshot:before {
+  content: "\e919";
+}
+.trd-section:before {
+  content: "\e91a";
+}
+.trd-settings:before {
+  content: "\e915";
+}
