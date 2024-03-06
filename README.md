@@ -1,3 +1,4 @@
+* [shop-panel](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/shop-panel) - Админ-панель магазина. Vue.
 * [bar-manager-vue](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/bar-manager) - Админ-панель. Vue.js, Vuex. (login: test, pass: test) [demo](https://staskontrabas.github.io/bar-manager/pub/index.html)
 * [widget-vue](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/widget-vue) - Виджет чата и обратного звонка. Vue.js, ООП [demo](https://staskontrabas.github.io/widget-vue/dist/)
 * [widget](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/widget) - Виджет чата и обратного звонка. JavaScript, ООП [demo](https://staskontrabas.github.io/widget/index.html)
