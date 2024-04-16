@@ -1,0 +1,44 @@
+[
+        {
+        "key": "1",
+        "city": "Москва",
+        "citizen": 32,
+        "cars": 44
+        },
+        {
+        "key": "2",
+        "city": "Орел",
+        "citizen": 42,
+        "cars": 33
+        },
+        {
+        "key": "3",
+        "city": "Брест",
+        "citizen": 42,
+        "cars": 22
+        },
+        {
+        "key": "4",
+        "city": "Луга",
+        "citizen": 22,
+        "cars": 4
+        },
+        {
+        "key": "5",
+        "city": "Лондон",
+        "citizen": 77,
+        "cars": 13
+        },
+        {
+        "key": "6",
+        "city": "Рим",
+        "citizen": 77,
+        "cars": 43
+        },
+        {
+        "key": "7",
+        "city": "Рига",
+        "citizen": 14,
+        "cars": 16
+        }
+]
