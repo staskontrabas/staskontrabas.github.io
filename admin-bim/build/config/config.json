@@ -1,0 +1,96 @@
+{
+    "configLicense": {
+        "collisions": {
+            "code": 23,
+            "type": "RouteUserInt"
+        },
+        "collision_reports": {
+            "code": 23,
+            "type": "RouteUserInt"
+        },
+        "collision_settings": {
+            "code": 23,
+            "type": "RouteUserInt"
+        },
+        "hidden": {
+            "code": 21,
+            "type": "RouteUserBase"
+        },
+        "dispatcher": {
+            "code": 21,
+            "type": "RouteUserBase"
+        },
+        "filters": {
+            "code": 22,
+            "type": "RouteUserPro"
+        },
+        "rooms": {
+            "code": 22,
+            "type": "RouteUserPro"
+        },
+        "tabs": {
+            "code": 22,
+            "type": "RouteUserPro"
+        },
+        "size2000": {
+            "code": 21,
+            "type": "RouteUserBase"
+        },
+        "errorKSI": {
+            "code": 23,
+            "type": "RouteUserInt"
+        },
+        "tasksList": {
+            "code": 21,
+            "type": "RouteUserBase"
+        },
+        "consolidation": {
+            "code": 22,
+            "type": "RouteUserPro"
+        },
+        "commentsPDF": {
+            "code": 21,
+            "type": "RouteUserBase"
+        },
+        "tasksPDF": {
+            "code": 21,
+            "type": "RouteUserBase"
+        },
+        "editRVT": {
+            "code": 21,
+            "type": "RouteUserBase"
+        },
+        "size20": {
+            "code": 20,
+            "type": "RouteUserStart"
+        },
+        "delta": {
+            "code": 21,
+            "type": "RouteUserBase"
+        },
+        "planes": {
+            "code": 20,
+            "type": "RouteUserStart"
+        },
+        "convertRSIM": {
+            "code": 23,
+            "type": "RouteUserInt"
+        },
+	"specificationxml": {
+            "code": 23,
+            "type": "RouteUserInt"
+        },
+	"licStruct": {
+            "code": 23,
+            "type": "RouteUserInt"
+        },
+	"licCreatexml": {
+            "code": 23,
+            "type": "RouteUserInt"
+        },
+	"uploadProject": {
+            "code": 23,
+            "type": "RouteUserInt"
+        }
+    }
+}

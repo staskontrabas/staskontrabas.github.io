@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["noprefetch-Katakana-bcmap"],{"9d22":function(e,n,o){"use strict";o.r(n),n["default"]="�RCopyright 1990-2009 Adobe Systems Incorporated.\nAll rights reserved.\nSee ./LICENSE\0\0�` ?�F\0�"}}]);
+//# sourceMappingURL=noprefetch-Katakana-bcmap.ab1ffcef.js.map
