@@ -1,4 +1,4 @@
-* [admin-bim](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/admin-bim) - Админ-панель, файловая система, сотрудники, PDF редактор, чат. Vue.
+* [admin-bim](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/admin-bim) - Админ-панель, файловая система, сотрудники, PDF редактор, чат. Vue.  [demo](https://staskontrabas.github.io/admin-bim/build/index.html)
 * [admin-bim-viewer](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/admin-bim-viewer) - Фрейм для обработки 3d моделей. Vue, WASM.
 * [shop-panel](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/shop-panel) - Админ-панель магазина. Vue.
 * [bar-manager-vue](https://github.com/staskontrabas/staskontrabas.github.io/tree/master/bar-manager) - Админ-панель. Vue.js, Vuex. (login: test, pass: test) [demo](https://staskontrabas.github.io/bar-manager/pub/index.html)
