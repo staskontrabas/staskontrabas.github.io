@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "parent": 0,
+      "name": "folder 1",
+      "title": "folder 1"
+    },
+    {
+      "id": 11,
+      "parent": 1,
+      "name": "folder 11",
+      "title": "folder 11"
+    },
+    {
+      "id": 111,
+      "parent": 11,
+      "name": "folder 111",
+      "title": "folder 111"
+    },
+    {
+      "id": 2,
+      "parent": 0,
+      "name": "folder 2",
+      "title": "folder 2"
+    },
+    {
+      "id": 21,
+      "parent": 2,
+      "name": "folder 21",
+      "title": "folder 21"
+    }
+  ]
