@@ -2,9 +2,10 @@
     import { ref, computed, onBeforeMount } from 'vue'
     import TreeView from './TreeView.vue'
     
-    const props = defineProps<{ folder: string }>()
+    const props = defineProps<{ folder: string, items: [] }>()
     
-    const curr_folder = ref<string>('')
+    const items = ref<[]>(props.items)
+    const curr_folder = ref<string>(props.folder)
 
     const emit = defineEmits<{
         (e: "takeComp", v: string): void
@@ -20,8 +21,8 @@
         let list = items.filter(i => i.parent == parent)
         list.map((val) => {
             let item = val
-            if(item.title == props.folder){
-                item.expanded = true
+            if(item.title == curr_folder.value){
+                // item.expanded = true
                 item.active = true
             }
             item.children = createTree(items, val.id)
@@ -32,12 +33,13 @@
     const showTree = () => {
         emit('takeComp', 'PathFolders')
     }
-    const itemsMap = ref()
-    const items = ref([])
+    // const itemsMap = ref()
+    // const items = ref([])
     const setExpanded = (val: any, expanded: boolean) => {
         items.value = items.value.map(item => {
             item.active = false
             if(val == item.id){
+                console.log(item.expanded, expanded)
                 curr_folder.value = item.title
                 item.expanded = expanded
                 item.active = true
@@ -53,14 +55,14 @@
         emit('setFolder', curr_folder.value)
         showTree()
     }
-    async function getFolders() {
-        const response = await fetch("./folders.json")
-        items.value = await response.json()
-    }
+    // async function getFolders() {
+    //     const response = await fetch("./folders.json")
+    //     items.value = await response.json()
+    // }
 
-    onBeforeMount(() => {
-        getFolders()
-    })
+    // onBeforeMount(() => {
+    //     getFolders()
+    // })
 </script>
 
 <template>

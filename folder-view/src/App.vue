@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onBeforeMount } from 'vue'
 import type { Component } from 'vue'
 import PathFolders from './components/PathFolders.vue'
 import TreeFolders from './components/TreeFolders.vue'
 
 const folder = ref<string>('')
 const currentComp = ref<string>('PathFolders')
+const items = ref([])
 
 interface IComponents {
     [key: string]: Component
@@ -20,7 +21,24 @@ const takeComp = (val: string) => {
 }
 const setFolder = (val: string) => {
     folder.value = val
+    if(!val){
+        items.value = items.value.map(item => {
+            return {
+                ...item,
+                expanded: false,
+                active: false
+            }
+        })
+    }
 }
+async function getFolders() {
+    const response = await fetch("./folders.json")
+    items.value = await response.json()
+}
+
+onBeforeMount(() => {
+    getFolders()
+})
 </script>
 
 <template>
@@ -30,6 +48,7 @@ const setFolder = (val: string) => {
                 :is="tabs[currentComp]"
                 @takeComp="takeComp"
                 @setFolder="setFolder"
+                :items="items"
                 :folder="folder"/>
         </div>
     </v-app>
